@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?9kwnqr');
+  src:  url('../fonts/icomoon.eot?9kwnqr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9kwnqr') format('truetype'),
+    url('../fonts/icomoon.woff?9kwnqr') format('woff'),
+    url('../fonts/icomoon.svg?9kwnqr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-in-ear:before {
+  content: "\e900";
+}
+.icon-on-ear:before {
+  content: "\e901";
+}
+.icon-over-ear:before {
+  content: "\e902";
+}
+
+
+
+
+
+
+
+.navbar-brand {
+  .logo {
+    max-width: 150px;
+  }
+  .description {
+    color: $primary !important;
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
+.questionnaire {
+  header {
+    margin: 15px auto 66px;
+    padding: 22px 25px 15px;
+    background: #fff;
+    border-radius: 4px 15px 15px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.08), 0 3px 10px 0 rgba(0,0,0,.04);
+    font-size: 17px;
+    text-align: left;
+    h1 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.card-body {
+  background-color: #f9fafc;
+}
+.card-info {
+  background-color: #f9fafc;
+}
+.rating {
+  color: #e7954d;
+  margin-right: 10px;
+  &.rating-5-0:before {
+    content: "\f005 \00A0 \f005 \00A0 \f005 \00A0 \f005 \00A0 \f005";
+  }
+  &.rating-4-5:before {
+    content: "\f005 \00A0 \f005 \00A0 \f005 \00A0 \f005 \00A0 \f089";
+  }
+  &.rating-4-0:before {
+    content: "\f005 \00A0 \f005 \00A0 \f005 \00A0 \f005";
+  }
+  &.rating-3-5:before {
+    content: "\f005 \00A0 \f005 \00A0 \f005 \00A0 \f089";
+  }
+  &.rating-3-0:before {
+    content: "\f005 \00A0 \f005 \00A0 \f005";
+  }
+}
+.brand {
+  font-size: 1.5rem;
+}
+.pimage {
+  margin: 20px;
+  width:calc(100% - 40px);
+  height:calc(100% - 40px);
+  object-fit:cover;
+}
+
+.questionnaire {
+  h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+  }
+  .form-group {
+    margin-left: 20px;
+  }
+  .custom-control {
+    margin: 30px 0;
+  }
+  label {
+    font-size: 1.2rem;
+    .icon {
+      font-size: 1.5rem;
+      vertical-align: bottom;
+      display: inline-block;
+      color: #acadaf;
+      width: 3rem;
+      text-align: center;
+      &+span {
+        margin-left: 3rem;
+      }
+    }
+    span {
+      display: block;
+      font-size: 1rem;
+    }
+  }
+}

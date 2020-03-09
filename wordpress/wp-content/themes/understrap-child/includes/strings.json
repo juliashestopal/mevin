@@ -1,0 +1,15 @@
+[{
+  "bluetooth-headphones": {
+  "strings": {
+    "requirements": {
+      "over_ear": {
+        "title": "Over ear design",
+        "name": "Over ear",
+        "slug": "over_ear",
+        "description": "comfortable for longer use.",
+        "color": "#f00"
+      }
+    }
+  }
+  }
+}]
