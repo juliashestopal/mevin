@@ -74,13 +74,13 @@ while ( $posts->have_posts() ) : $posts->the_post();
     <div class="card mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-4 d-none d-sm-block">
                     <div class="pimage">
                         <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
                              alt="<?php the_title(); ?>">
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8 d-none d-sm-block">
                     <div class="card-body">
 
                         <span class="brand"><?php echo $product->get_attribute( 'pa_brand' ); ?></span>
@@ -119,6 +119,55 @@ while ( $posts->have_posts() ) : $posts->the_post();
 
                     </div>
                 </div>
+
+
+                            <div class="col-6 d-block d-sm-none">
+                                <div class="card-body">
+
+                                    <span class="brand"><?php echo $product->get_attribute( 'pa_brand' ); ?></span>
+		                            <?php the_title( '<h2 class="card-title">', '</h2>' ); ?>
+                                    <p>
+                                        <i class="fa rating rating-<?php echo number_format( round( get_post_meta( $post->ID, 'rating', true ) / 5, 1 ) * 5, 1, '-', ',' ); ?>"></i>
+			                            <?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?>
+                                    </p>
+                                    <p class="card-text">Price: <?php echo $product->get_price(); ?></p>
+                                    <p class="card-text">Score: <?php echo $post->relevance; ?>, Sound
+                                        quality: <?php echo get_post_meta( $post->ID, 'sound_quality', true ); ?>,
+                                        Mic? <?php echo get_post_meta( $post->ID, 'microphone', true ); ?>,
+                                        Battery: <?php echo get_post_meta( $post->ID, 'battery_life', true ); ?>,
+                                        Latency: <?php echo get_post_meta( $post->ID, 'latency', true ); ?></p>
+		                            <?php
+		                            foreach ( $requirements as $requirement => $key ) {
+			                            if ( $key->slug === "_price" ) {
+				                            if ( $key->value <= get_post_meta( $post->ID, $key->slug, true ) ) {
+					                            echo '+' . $key->title . '<br>';
+				                            } else {
+					                            echo '-' . $key->title . '<br>';
+				                            }
+			                            } else {
+				                            if ( get_post_meta( $post->ID, $key->slug, true ) >= $key->value ) {
+					                            echo '+' . $key->title . '<br>';
+				                            } else {
+					                            echo '-' . $key->title . '<br>';
+				                            }
+			                            }
+
+		                            }
+		                            ?>
+                                    <p class="card-text"><a class="track-click btn btn-primary d-block d-inline-block"
+                                                            data-post_id="<?php echo $post->ID; ?>" href="#">Simulate click</a></p>
+
+
+                                </div>
+                            </div>
+                            <div class="col-6 d-block d-sm-none">
+                                <div class="pimage">
+                                    <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
+                                         alt="<?php the_title(); ?>">
+                                </div>
+                            </div>
+
+
             </div>
         </div>
     </div>
