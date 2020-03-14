@@ -59,41 +59,48 @@ $requirements = $requirement_template;
     <div class="description">Reviews Scanned</div>
 </div>
 
-<?php while ($posts->have_posts()) : $posts->the_post();
-        $product = wc_get_product($post->ID);
-        $count = (int)get_post_meta($post->ID, 'clicks', true);
-        $purl = $product->get_product_url();
-        if (!empty($amz_tag)) {
-            $link = str_replace('askmevin06-20', $amz_tag, $purl);
-        } else {
-            $link = $purl;
-        }
-        $matches_requirement = new stdClass();
-        $non_matches_requirement = new stdClass();
 
-        foreach ($requirements as $requirement => $key) {
-            if ($key->slug === "_price") {
-                if (get_post_meta($post->ID, $key->slug, true) <= $key->value) {
-                    $matches_requirement->$requirement = $key;
-                } else {
-                    $non_matches_requirement->$requirement = $key;
-                }
+<?php
+
+$number_of_items = 0;
+while ($posts->have_posts()) : $posts->the_post();
+
+    $number_of_items++;
+    $product = wc_get_product($post->ID);
+    $count = (int)get_post_meta($post->ID, 'clicks', true);
+    $purl = $product->get_product_url();
+    if (!empty($amz_tag)) {
+        $link = str_replace('askmevin06-20', $amz_tag, $purl);
+    } else {
+        $link = $purl;
+    }
+    $matches_requirement = new stdClass();
+    $non_matches_requirement = new stdClass();
+
+    foreach ($requirements as $requirement => $key) {
+        if ($key->slug === "_price") {
+            if (get_post_meta($post->ID, $key->slug, true) <= $key->value) {
+                $matches_requirement->$requirement = $key;
             } else {
-                if (get_post_meta($post->ID, $key->slug, true) >= $key->value) {
-                    $matches_requirement->$requirement = $key;
-                } else {
-                    $non_matches_requirement->$requirement = $key;
-                }
+                $non_matches_requirement->$requirement = $key;
             }
+        } else {
+            if (get_post_meta($post->ID, $key->slug, true) >= $key->value) {
+                $matches_requirement->$requirement = $key;
+            } else {
+                $non_matches_requirement->$requirement = $key;
+            }
+        }
 
-        } ?>
+    } ?>
 
     <div class="card mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 d-none d-sm-block block-product_img">
                     <div class="product-image">
-                        <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
+                        <span class="product-match-number"><?php echo $number_of_items == 1 ? "#1 Best Match" : "# {$number_of_items}"; ?></span>
+                        <img src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" class="card-img"
                              alt="<?php the_title(); ?>">
                     </div>
                 </div>
@@ -118,8 +125,8 @@ $requirements = $requirement_template;
 			                    echo "<li class = 'non_matches_match'>" . $text . "</li>";
 		                    } ?>
                         </ul>
-                        <p class="card-text card-text_desktop"><a class="track-click btn btn-primary d-block d-inline-block"
-                                                data-post_id="<?php echo $post->ID; ?>" href="#">View Deal</a></p>
+                        <p class="card-text card-text_desktop"><a target="_blank" class="track-click btn btn-primary d-block d-inline-block"
+                                                data-post_id="<?php echo $post->ID; ?>" href="<?php echo $link ?>">View Deal</a></p>
                         <small class="text-muted"><i class="fa fa-truck"></i> Free Shipping & Returns by Amazon</small>
 
                     </div>
@@ -141,13 +148,14 @@ $requirements = $requirement_template;
                 </div>
                 <div class="col-6 d-block d-sm-none">
                     <div class="product-image">
-                        <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
+                        <span class="product-match-number"><?php echo $number_of_items == 1 ? "#1 Best Match" : "# {$number_of_items}"; ?></span>
+                        <img src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" class="card-img"
                              alt="<?php the_title(); ?>">
                     </div>
                 </div>
                 <div class="col-12 d-block d-sm-none block-btn_mobile">
-                    <p class="card-text"><a class="track-click btn btn-primary d-block d-inline-block"
-                                            data-post_id="<?php echo $post->ID; ?>" href="#">View Deal</a></p>
+                    <p class="card-text"><a target="_blank" class="track-click btn btn-primary d-block d-inline-block"
+                                            data-post_id="<?php echo $post->ID; ?>" href="<?php echo $link ?>">View Deal</a></p>
                     <small class="text-muted"><i class="fa fa-truck"></i> Free Shipping & Returns by Amazon</small>
 
                 </div>
