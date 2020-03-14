@@ -1,15 +1,58 @@
-[{
+{
   "bluetooth-headphones": {
-  "strings": {
-    "requirements": {
-      "over_ear": {
-        "title": "Over ear design",
-        "name": "Over ear",
-        "slug": "over_ear",
-        "description": "comfortable for longer use.",
-        "color": "#f00"
+    "strings": {
+      "requirements": {
+        "over_ear": {
+          "title": "Over ear design",
+          "name": "Over ear",
+          "slug": "over_ear",
+          "description": "Over ear design comfortable for longer use",
+          "color": "#f00"
+        },
+        "in_ear": {
+          "title": "In ear design",
+          "name": "In ear",
+          "slug": "in_ear",
+          "description": "In ear design ultra portable",
+          "color": "#f00"
+        },
+        "on_ear": {
+          "title": "On ear design",
+          "name": "On ear",
+          "slug": "on_ear",
+          "description": "On ear design compact and comfortable ",
+          "color": "#f00"
+        },
+        "battery_life": {
+          "title": "Battery Life",
+          "name": "Battery Life",
+          "slug": "battery_life",
+          "description": "%s%h Battery life",
+          "color": "#f00"
+        },
+        "sound_quality": {
+          "title": "sound_quality",
+          "name": "sound_quality",
+          "slug": "sound_quality",
+          "description": "Great sound quality",
+          "color": "#f00"
+        },
+        "noise_cancellation": {
+          "title": "noise_cancellation",
+          "name": "noise_cancellation",
+          "slug": "noise_cancellation",
+          "description": "Noise cancellation",
+          "color": "#f00"
+        },
+        "price": {
+          "title": "Price",
+          "name": "Price",
+          "slug": "_price",
+          "description": "%s%$ budget",
+          "color": "#f00"
+        }
       }
     }
-  }
-  }
-}]
+  },
+  "mobile": {}
+}
