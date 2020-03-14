@@ -88,8 +88,8 @@ $requirements = $requirement_template;
     <div class="card mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 d-none d-sm-block">
-                    <div class="pimage">
+                <div class="col-md-4 d-none d-sm-block block-product_img">
+                    <div class="product-image">
                         <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
                              alt="<?php the_title(); ?>">
                     </div>
@@ -105,15 +105,19 @@ $requirements = $requirement_template;
                         </p>
 
                         <p class="matches_count"> <?php echo count((array)$matches_requirement) . '/' . count((array)$requirements); ?> Needs matches </p>
-						<?php foreach ($matches_requirement as $key => $value) {
-                            echo '+' . $value->title . '<br>';
-                        }
-                            foreach ($non_matches_requirement as $key => $value){
-                            echo '-' . $value->title . '<br>';
-                        }  ?>
+                        <ul class="matches_list">
+		                    <?php foreach ($matches_requirement as $key => $value) {
+			                    $text = !empty($value->match_text) ? str_replace('%s%', $value->value, $value->match_text) : $value->title;
+			                    echo "<li class = 'matches_match'>" . $text . "</li>";
+		                    }
+		                    foreach ($non_matches_requirement as $key => $value) {
+			                    $text = !empty($value->match_text) ? str_replace('%s%', $value->value, $value->not_match_text) : $value->title;
+			                    echo "<li class = 'non_matches_match'>" . $text . "</li>";
+		                    } ?>
+                        </ul>
                         <p class="card-text"><a class="track-click btn btn-primary d-block d-inline-block"
                                                 data-post_id="<?php echo $post->ID; ?>" href="#">Simulate click</a></p>
-
+                        <small class="text-muted"><i class="fa fa-truck"></i> Free Shipping & Returns by Amazon</small>
 
                     </div>
                 </div>
@@ -133,7 +137,7 @@ $requirements = $requirement_template;
                     </div>
                 </div>
                 <div class="col-6 d-block d-sm-none">
-                    <div class="pimage">
+                    <div class="product-image">
                         <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
                              alt="<?php the_title(); ?>">
                     </div>
@@ -147,15 +151,16 @@ $requirements = $requirement_template;
                 <div class="col-12 d-block d-sm-none">
                     <div class="card-body">
                         <p class="matches_count"> <?php echo count((array)$matches_requirement) . '/' . count((array)$requirements); ?> Needs matches </p>
-			            <?php foreach ($matches_requirement as $key => $value) {
-				            echo '+' . $value->title . '<br>';
-			            }
-			            foreach ($non_matches_requirement as $key => $value){
-				            echo '-' . $value->title . '<br>';
-			            }  ?>
-
-
-
+                        <ul class="matches_list">
+		                    <?php foreach ($matches_requirement as $key => $value) {
+			                    $text = !empty($value->match_text) ? str_replace('%s%', $value->value, $value->match_text) : $value->title;
+			                    echo "<li class = 'matches_match'>" . $text . "</li>";
+		                    }
+		                    foreach ($non_matches_requirement as $key => $value) {
+			                    $text = !empty($value->match_text) ? str_replace('%s%', $value->value, $value->not_match_text) : $value->title;
+			                    echo "<li class = 'non_matches_match'>" . $text . "</li>";
+		                    } ?>
+                        </ul>
                     </div>
                 </div>
             </div>
