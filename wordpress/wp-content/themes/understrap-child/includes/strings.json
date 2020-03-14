@@ -7,49 +7,56 @@
           "name": "Over ear",
           "slug": "over_ear",
           "description": "Over ear design comfortable for longer use",
-          "color": "#f00"
+          "color": "#f1bf94"
         },
         "in_ear": {
-          "title": "In ear design",
+          "title": "In ear desi gn",
           "name": "In ear",
           "slug": "in_ear",
           "description": "In ear design ultra portable",
-          "color": "#f00"
+          "color": "#f1bf94"
         },
         "on_ear": {
           "title": "On ear design",
           "name": "On ear",
           "slug": "on_ear",
           "description": "On ear design compact and comfortable ",
-          "color": "#f00"
+          "color": "#f1bf94"
         },
         "battery_life": {
           "title": "Battery Life",
           "name": "Battery Life",
           "slug": "battery_life",
           "description": "%s%h Battery life",
-          "color": "#f00"
+          "color": "#8ad8bf",
+          "match_text":  "%s%h Battery life",
+          "not_match_text": "%s%h Battery life"
         },
         "sound_quality": {
-          "title": "sound_quality",
+          "title": "Sound Quality",
           "name": "sound_quality",
           "slug": "sound_quality",
           "description": "Great sound quality",
-          "color": "#f00"
+          "color": "#c5a0f7",
+          "match_text":  "Great sound quality",
+          "not_match_text": "Average sound"
         },
         "noise_cancellation": {
-          "title": "noise_cancellation",
+          "title": "Noise Cancellation",
           "name": "noise_cancellation",
           "slug": "noise_cancellation",
           "description": "Noise cancellation",
-          "color": "#f00"
+          "color": "#90c9f4",
+          "not_match_text": "No noise cancellation"
         },
         "price": {
           "title": "Price",
           "name": "Price",
           "slug": "_price",
           "description": "%s%$ budget",
-          "color": "#f00"
+          "color": "#9ac5d5",
+          "match_text":  "In your budget",
+          "not_match_text": "Not in your budget"
         }
       }
     }
