@@ -21,9 +21,12 @@ $requirements = $requirement_template;
                     <h1>You Asked For:</h1>
                     <ul>
                       <?php foreach ($requirements as $requirement=>$key) {
-                           echo "<li class='color-{$key->color}'>" . str_replace('%s%', $key->value, $key->description)  . "</li>";
+                           echo "<span class='disc' style='background-color: {$key->color}'></span><li>" . str_replace('%s%', $key->value, $key->description)  . "</li>";
                       } ?>
                     </ul>
+
+                </div>
+                <div class="col-md-12 col-xs-12 block-start_over">
                     <div class="start-over">
                         <a href="javascript:window.history.back()" class="start-over_link">
                             <svg
@@ -115,8 +118,8 @@ $requirements = $requirement_template;
 			                    echo "<li class = 'non_matches_match'>" . $text . "</li>";
 		                    } ?>
                         </ul>
-                        <p class="card-text"><a class="track-click btn btn-primary d-block d-inline-block"
-                                                data-post_id="<?php echo $post->ID; ?>" href="#">Simulate click</a></p>
+                        <p class="card-text card-text_desktop"><a class="track-click btn btn-primary d-block d-inline-block"
+                                                data-post_id="<?php echo $post->ID; ?>" href="#">View Deal</a></p>
                         <small class="text-muted"><i class="fa fa-truck"></i> Free Shipping & Returns by Amazon</small>
 
                     </div>
@@ -142,11 +145,11 @@ $requirements = $requirement_template;
                              alt="<?php the_title(); ?>">
                     </div>
                 </div>
-                <div class="col-12 d-block d-sm-none">
+                <div class="col-12 d-block d-sm-none block-btn_mobile">
                     <p class="card-text"><a class="track-click btn btn-primary d-block d-inline-block"
-                                            data-post_id="<?php echo $post->ID; ?>" href="#">Simulate click</a></p>
+                                            data-post_id="<?php echo $post->ID; ?>" href="#">View Deal</a></p>
                     <small class="text-muted"><i class="fa fa-truck"></i> Free Shipping & Returns by Amazon</small>
-                    <p class="card-text"><small class="text-muted"></small></p>
+
                 </div>
                 <div class="col-12 d-block d-sm-none">
                     <div class="card-body">

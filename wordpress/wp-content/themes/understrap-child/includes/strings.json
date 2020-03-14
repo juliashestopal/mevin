@@ -10,7 +10,7 @@
           "color": "#f1bf94"
         },
         "in_ear": {
-          "title": "In ear desi gn",
+          "title": "In ear design",
           "name": "In ear",
           "slug": "in_ear",
           "description": "In ear design ultra portable",
@@ -23,6 +23,15 @@
           "description": "On ear design compact and comfortable ",
           "color": "#f1bf94"
         },
+        "sound_quality": {
+          "title": "Sound Quality",
+          "name": "sound_quality",
+          "slug": "sound_quality",
+          "description": "Great sound quality",
+          "color": "#f1bf94",
+          "match_text":  "Great sound quality",
+          "not_match_text": "Average sound"
+        },
         "battery_life": {
           "title": "Battery Life",
           "name": "Battery Life",
@@ -32,15 +41,6 @@
           "match_text":  "%s%h Battery life",
           "not_match_text": "%s%h Battery life"
         },
-        "sound_quality": {
-          "title": "Sound Quality",
-          "name": "sound_quality",
-          "slug": "sound_quality",
-          "description": "Great sound quality",
-          "color": "#c5a0f7",
-          "match_text":  "Great sound quality",
-          "not_match_text": "Average sound"
-        },
         "noise_cancellation": {
           "title": "Noise Cancellation",
           "name": "noise_cancellation",
@@ -48,6 +48,38 @@
           "description": "Noise cancellation",
           "color": "#90c9f4",
           "not_match_text": "No noise cancellation"
+        },
+        "sweat_resistant": {
+          "title": "Sweat Resistant",
+          "name": "Sweat Resistant",
+          "slug": "sweat_resistant",
+          "description": "Sweat Resistant",
+          "color": "#ef9e9e",
+          "not_match_text": "Not sweat resistant"
+        },
+        "microphone": {
+          "title": "Microphone",
+          "name": "Microphone",
+          "slug": "microphone",
+          "description": "Microphone",
+          "color": "#90c9f4",
+          "not_match_text": "No Microphone"
+        },
+        "latency": {
+          "title": "Latency",
+          "name": "latency",
+          "slug": "latency",
+          "description": "Latency",
+          "color": "#90c9f4",
+          "not_match_text": "No Latency"
+        },
+        "foldable": {
+          "title": "Foldable",
+          "name": "foldable",
+          "slug": "foldable",
+          "description": "Foldable",
+          "color": "#90c9f4",
+          "not_match_text": "Not foldable"
         },
         "price": {
           "title": "Price",
