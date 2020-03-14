@@ -23,16 +23,6 @@ if (!empty($_GET['atag'])) {
 
 	<div class="questionnaire <?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
-		<header>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php //the_title( '<h1>', '</h1>' ); ?>
-
-				<?php //the_content(); ?>
-			<?php endwhile; // end of the loop. ?>
-			<h1>You asked for:</h1>
-			<a href="javascript:window.history.back()">Start over</a>
-		</header>
 
 			<!-- Do the left sidebar check -->
 			<!-- <?php get_template_part( 'global-templates/left-sidebar-check' ); ?> -->

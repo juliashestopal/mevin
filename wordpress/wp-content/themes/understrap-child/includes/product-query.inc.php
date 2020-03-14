@@ -53,7 +53,7 @@ function calculate_relevance( $post, $queryArray ){
       if ($key == 'price') { //if price then
         $rprice = $value;
         $pprice = get_post_meta( $post->ID , '_price', true );
-        $gprice = stats_dens_normal($rprice, $rprice*.1, $pprice) / stats_dens_normal($rprice, $rprice*.1, $rprice);
+       // $gprice = stats_dens_normal($rprice, $rprice*.1, $pprice) / stats_dens_normal($rprice, $rprice*.1, $rprice);
         //$raw_score = $raw_score + (1 / $price);
       } else { // if not price
         if (get_post_meta( $post->ID , $key, true ) >= $value) {
