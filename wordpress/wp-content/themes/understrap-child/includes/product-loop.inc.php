@@ -20,12 +20,9 @@ $requirements = $requirement_template;
                 <div class="requirement">
                     <h1>You Asked For:</h1>
                     <ul>
-                        <li>Great sound quality</li>
-                        <li>In ear design</li>
-                        <li>Noise cancellation</li>
-                        <li><?php echo $requirements->battery_life->value; ?>h battery life</li>
-                        <li>Sweat resistant</li>
-                        <li><?php echo $requirements->price->value; ?>$ budget</li>
+                      <?php foreach ($requirements as $requirement=>$key) {
+                           echo "<li class='color-{$key->color}'>" . str_replace('%s%', $key->value, $key->description)  . "</li>";
+                      } ?>
                     </ul>
                     <div class="start-over">
                         <a href="javascript:window.history.back()" class="start-over_link">
