@@ -28,7 +28,7 @@
           "name": "sound_quality",
           "slug": "sound_quality",
           "description": "Great sound quality",
-          "color": "#f1bf94",
+          "color": "#c5a0f7",
           "match_text":  "Great sound quality",
           "not_match_text": "Average sound"
         },
