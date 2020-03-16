@@ -7049,9 +7049,9 @@
 // Add your custom JS here.
 jQuery(document).ready( function() {
    jQuery(".track-click").click( function(e) {
-      e.preventDefault();
+      // e.preventDefault();
       post_id = jQuery(this).attr("data-post_id");
-      console.log(post_id)
+      console.log(post_id);
       nonce = jQuery(this).attr("data-nonce");
       jQuery.ajax({
          method : "POST",
