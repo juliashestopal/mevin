@@ -38,7 +38,7 @@
           "slug": "battery_life",
           "description": "%s%h Battery life",
           "color": "#8ad8bf",
-          "match_text":  "%s%h Battery life",
+          "match_text":  "%s%h+ Battery life",
           "not_match_text": "%s%h Battery life"
         },
         "noise_cancellation": {
@@ -85,7 +85,7 @@
           "title": "Price",
           "name": "Price",
           "slug": "_price",
-          "description": "%s%$ budget",
+          "description": "$%s% budget",
           "color": "#9ac5d5",
           "match_text":  "In your budget",
           "not_match_text": "Not in your budget"
