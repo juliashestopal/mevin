@@ -53,7 +53,12 @@ get_header();
         <div class="top-container">
             <h4> Find the right <?php echo $keywords[0] . " " . $keywords[1]; ?></h4>
             <span> Get detailed research on the best Wireless Headphones that meet your needs based on hundreds of professional reviews. </span>
-            <div class="tags"></div>
+            <div class="tags">
+                <span class="tag-1">Sound quality</span>
+                <span class="tag-2">Noise Cancellation</span>
+                <span class="tag-3">Battery life</span>
+                <span class="tag-4">Your needs</span>
+            </div>
         </div>
         <div>
 
