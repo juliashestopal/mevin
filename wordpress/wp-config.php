@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'almostdo_askmevi' );
 
 /** MySQL database username */
-define( 'DB_USER', 'almostdo_askmevi' );
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'eS)6AD2p(9' );
+define( 'DB_PASSWORD', 'root' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

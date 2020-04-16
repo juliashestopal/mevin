@@ -48,14 +48,14 @@ $requirements = $requirement_template;
 <div class="result-main_block">
     <div class="col-md-12 reviews-scanned">
         <div class="count">
-            <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="54px" height="54px">
-                <path fill-rule="evenodd" fill="rgb(60, 190, 149)"
-                      d="M48.544,24.221 L49.003,24.706 L53.996,29.993 L47.732,34.199 L47.179,34.571 L47.360,35.212 L49.342,42.232 L41.858,43.026 L41.193,43.096 L41.057,43.753 L39.572,50.894 L32.575,48.094 L31.958,47.847 L31.534,48.364 L26.924,53.991 L22.023,48.239 L21.587,47.727 L20.974,47.986 L14.294,50.813 L12.609,43.428 L12.460,42.772 L11.793,42.714 L4.578,42.091 L6.495,34.764 L6.664,34.117 L6.101,33.755 L-0.004,29.825 L5.078,24.231 L5.528,23.736 L5.200,23.157 L1.606,16.818 L8.685,14.244 L9.313,14.015 L9.290,13.347 L9.034,6.056 L16.495,7.090 L17.151,7.181 L17.440,6.574 L20.579,0.001 L26.708,4.406 L27.248,4.795 L27.782,4.395 L33.597,0.041 L36.989,6.808 L37.288,7.405 L37.945,7.301 L45.106,6.167 L44.986,13.746 L44.975,14.418 L45.605,14.633 L52.467,16.978 L48.863,23.632 L48.544,24.221 ZM40.148,13.779 C36.783,10.391 32.134,8.296 26.999,8.296 C21.864,8.296 17.215,10.391 13.850,13.779 C10.485,17.167 8.403,21.848 8.403,27.018 C8.403,32.188 10.485,36.869 13.850,40.257 C17.215,43.645 21.864,45.740 26.999,45.740 C32.134,45.740 36.783,43.645 40.148,40.257 C43.513,36.869 45.594,32.188 45.594,27.018 C45.594,21.848 43.513,17.167 40.148,13.779 ZM26.996,43.873 C22.367,43.873 18.176,41.984 15.143,38.930 C12.109,35.876 10.233,31.657 10.233,26.996 C10.233,22.335 12.109,18.115 15.143,15.062 C18.176,12.007 22.367,10.118 26.996,10.118 C31.625,10.118 35.816,12.007 38.849,15.062 C41.882,18.115 43.759,22.335 43.759,26.996 C43.759,31.657 41.882,35.876 38.849,38.930 C35.816,41.984 31.625,43.873 26.996,43.873 ZM36.356,19.219 C35.999,18.859 35.418,18.859 35.061,19.219 L22.755,31.608 L18.109,26.930 C17.751,26.570 17.171,26.570 16.813,26.930 C16.455,27.291 16.455,27.874 16.813,28.235 L22.107,33.566 C22.465,33.926 23.045,33.926 23.403,33.566 L23.408,33.561 L36.356,20.524 C36.714,20.164 36.714,19.580 36.356,19.219 Z"/>
-            </svg>
-            <div class="text"><?php echo rand( 2000, 5000 ); ?></div>
+            <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="27px" height="27px">
+<path fill-rule="evenodd"  fill="rgb(60, 190, 149)"
+ d="M24.272,12.110 L24.501,12.353 L26.998,14.996 L23.866,17.100 L23.589,17.285 L23.680,17.606 L24.671,21.116 L20.929,21.513 L20.597,21.548 L20.528,21.877 L19.786,25.447 L16.288,24.047 L15.979,23.923 L15.767,24.182 L13.462,26.995 L11.011,24.119 L10.793,23.863 L10.487,23.993 L7.147,25.406 L6.305,21.714 L6.230,21.386 L5.897,21.357 L2.289,21.046 L3.248,17.382 L3.332,17.059 L3.051,16.877 L-0.002,14.913 L2.539,12.116 L2.764,11.868 L2.600,11.579 L0.803,8.409 L4.342,7.122 L4.657,7.008 L4.645,6.673 L4.517,3.028 L8.248,3.545 L8.576,3.590 L8.720,3.287 L10.289,0.000 L13.354,2.203 L13.624,2.397 L13.891,2.198 L16.798,0.021 L18.494,3.404 L18.644,3.703 L18.972,3.651 L22.553,3.083 L22.493,6.873 L22.488,7.209 L22.803,7.316 L26.233,8.489 L24.432,11.816 L24.272,12.110 ZM20.074,6.890 C18.391,5.196 16.067,4.148 13.499,4.148 C10.932,4.148 8.607,5.196 6.925,6.890 C5.242,8.584 4.202,10.924 4.202,13.509 C4.202,16.094 5.242,18.434 6.925,20.128 C8.607,21.822 10.932,22.870 13.499,22.870 C16.067,22.870 18.391,21.822 20.074,20.128 C21.756,18.434 22.797,16.094 22.797,13.509 C22.797,10.924 21.756,8.584 20.074,6.890 ZM13.498,21.936 C11.184,21.936 9.088,20.992 7.571,19.465 C6.055,17.938 5.117,15.828 5.117,13.498 C5.117,11.168 6.055,9.058 7.571,7.531 C9.088,6.004 11.184,5.059 13.498,5.059 C15.812,5.059 17.908,6.004 19.424,7.531 C20.941,9.058 21.879,11.168 21.879,13.498 C21.879,15.828 20.941,17.938 19.424,19.465 C17.908,20.992 15.812,21.936 13.498,21.936 ZM18.178,9.610 C17.999,9.429 17.709,9.429 17.530,9.610 L11.378,15.804 L9.054,13.465 C8.875,13.285 8.585,13.285 8.406,13.465 C8.228,13.645 8.228,13.937 8.406,14.117 L11.054,16.783 C11.233,16.963 11.523,16.963 11.702,16.783 L11.704,16.780 L18.178,10.262 C18.357,10.082 18.357,9.790 18.178,9.610 Z"/>
+</svg>
+            <div class="text"><?php echo number_format(rand( 2000, 5000 )); ?></div>
         </div>
         <div class="description">Reviews Scanned</div>
     </div>
@@ -106,18 +106,18 @@ $requirements = $requirement_template;
                                  alt="<?php the_title(); ?>">
                         </div>
                     </div>
-                    <div class="col-md-8 d-none d-sm-block">
+                    <div class="col-md-8 d-none d-sm-block block-needs">
                         <div class="card-body">
 
                             <span class="brand"><?php echo $product->get_attribute( 'pa_brand' ); ?></span>
 							<?php the_title( '<h2 class="card-title">', '</h2>' ); ?>
                             <p>
                                 <i class="fa rating rating-<?php echo number_format( round( get_post_meta( $post->ID, 'rating', true ) / 5, 1 ) * 5, 1, '-', ',' ); ?>"></i>
-								<?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?>
+								<span class = "rating-number"><?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?></span>
                             </p>
 
                             <p class="matches_count"> <?php echo count( (array) $matches_requirement ) . '/' . count( (array) $requirements ); ?>
-                                Needs matches </p>
+                                Needs Matched </p>
                             <ul class="matches_list">
 								<?php foreach ( $matches_requirement as $key => $value ) {
 									$text = ! empty( $value->match_text ) ? str_replace( '%s%', $value->value, $value->match_text ) : $value->title;
@@ -132,8 +132,24 @@ $requirements = $requirement_template;
                                                                       class="track-click btn btn-primary d-block d-inline-block"
                                                                       data-post_id="<?php echo $post->ID; ?>"
                                                                       href="<?php echo $link ?>">View Deal</a></p>
-                            <small class="text-muted"><i class="fa fa-truck"></i> Free Shipping & Returns by
-                                Amazon</small>
+                            <small class="text-muted">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998" viewBox="0 0 42 21" style="
+    margin-bottom: 2px;
+">
+ 
+<defs>
+    <style>
+      .cls-1 {
+        fill: #888;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Delivery_Icon" data-name="Delivery Icon" class="cls-1" d="M170.982,1396.38l-2.832-.58-1.328-4.01a3.524,3.524,0,0,0-3.32-2.38h-2.257v-2.08a1.327,1.327,0,0,0-1.328-1.32H142.346a1.33,1.33,0,0,0-1.328,1.32v14.56a1.335,1.335,0,0,0,1.328,1.33h1.46a3.807,3.807,0,0,0,7.613,0H161.6a3.807,3.807,0,0,0,7.613,0h1.46a1.332,1.332,0,0,0,1.328-1.33v-4.23A1.236,1.236,0,0,0,170.982,1396.38Zm-23.369,8.65a1.81,1.81,0,1,1,0-3.62A1.81,1.81,0,1,1,147.613,1405.03Zm13.632-9.58v-4.06H163.5a1.516,1.516,0,0,1,1.416,1.02l1.018,3.04h-4.691Zm4.2,9.58a1.81,1.81,0,1,1,1.814-1.81A1.853,1.853,0,0,1,165.45,1405.03Zm-27.663-15.93h-6.728a1.06,1.06,0,1,0,0,2.12h6.728a1.079,1.079,0,0,0,1.062-1.06A1.043,1.043,0,0,0,137.787,1389.1Zm0,4.45h-5.046a1.06,1.06,0,1,0,0,2.12h5.046a1.072,1.072,0,0,0,1.062-1.06A1,1,0,0,0,137.787,1393.55Zm0,4.42h-3.364a1.055,1.055,0,1,0,0,2.11h3.364a1.07,1.07,0,0,0,1.062-1.05A1.043,1.043,0,0,0,137.787,1397.97Z" transform="translate(-130 -1386)"/>
+</svg>
+ Free Shipping & Returns by
+                                Amazon
+                            </small>
 
                         </div>
                     </div>
@@ -147,7 +163,7 @@ $requirements = $requirement_template;
 							<?php the_title( '<h2 class="card-title">', '</h2>' ); ?>
                             <p>
                                 <i class="fa rating rating-<?php echo number_format( round( get_post_meta( $post->ID, 'rating', true ) / 5, 1 ) * 5, 1, '-', ',' ); ?>"></i>
-								<?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?>
+								<span class = "rating-number"><?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?></span>
                             </p>
 
 
@@ -164,13 +180,28 @@ $requirements = $requirement_template;
                                                 class="track-click btn btn-primary d-block d-inline-block"
                                                 data-post_id="<?php echo $post->ID; ?>" href="<?php echo $link ?>">View
                                 Deal</a></p>
-                        <small class="text-muted"><i class="fa fa-truck"></i> Free Shipping & Returns by Amazon</small>
+                        <small class="text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998" viewBox="0 0 42 21" style="
+    margin-bottom: 2px;">
+ 
+<defs>
+    <style>
+      .cls-1 {
+        fill: #888;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Delivery_Icon" data-name="Delivery Icon" class="cls-1" d="M170.982,1396.38l-2.832-.58-1.328-4.01a3.524,3.524,0,0,0-3.32-2.38h-2.257v-2.08a1.327,1.327,0,0,0-1.328-1.32H142.346a1.33,1.33,0,0,0-1.328,1.32v14.56a1.335,1.335,0,0,0,1.328,1.33h1.46a3.807,3.807,0,0,0,7.613,0H161.6a3.807,3.807,0,0,0,7.613,0h1.46a1.332,1.332,0,0,0,1.328-1.33v-4.23A1.236,1.236,0,0,0,170.982,1396.38Zm-23.369,8.65a1.81,1.81,0,1,1,0-3.62A1.81,1.81,0,1,1,147.613,1405.03Zm13.632-9.58v-4.06H163.5a1.516,1.516,0,0,1,1.416,1.02l1.018,3.04h-4.691Zm4.2,9.58a1.81,1.81,0,1,1,1.814-1.81A1.853,1.853,0,0,1,165.45,1405.03Zm-27.663-15.93h-6.728a1.06,1.06,0,1,0,0,2.12h6.728a1.079,1.079,0,0,0,1.062-1.06A1.043,1.043,0,0,0,137.787,1389.1Zm0,4.45h-5.046a1.06,1.06,0,1,0,0,2.12h5.046a1.072,1.072,0,0,0,1.062-1.06A1,1,0,0,0,137.787,1393.55Zm0,4.42h-3.364a1.055,1.055,0,1,0,0,2.11h3.364a1.07,1.07,0,0,0,1.062-1.05A1.043,1.043,0,0,0,137.787,1397.97Z" transform="translate(-130 -1386)"/>
+</svg>
+ Free Shipping & Returns by Amazon
+                        </small>
 
                     </div>
-                    <div class="col-12 d-block d-sm-none">
+                    <div class="col-12 d-block d-sm-none block-needs">
                         <div class="card-body">
                             <p class="matches_count"> <?php echo count( (array) $matches_requirement ) . '/' . count( (array) $requirements ); ?>
-                                Needs matches </p>
+                                Needs Matched </p>
                             <ul class="matches_list">
 								<?php foreach ( $matches_requirement as $key => $value ) {
 									$text = ! empty( $value->match_text ) ? str_replace( '%s%', $value->value, $value->match_text ) : $value->title;
