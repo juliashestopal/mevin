@@ -14,7 +14,7 @@ $requirements = $requirement_template;
 ?>
 
 <div class="requirement-block">
-    <div class="container">
+    
         <div class="row justify-content-md-center">
             <div class="col-md-8 col-xs-12">
                 <div class="requirement">
@@ -29,20 +29,17 @@ $requirements = $requirement_template;
                 <div class="col-md-12 col-xs-12 block-start_over">
                     <div class="start-over">
                         <a href="javascript:window.history.back()" class="start-over_link">
-                            <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="16px" height="18px">
-                                <path fill-rule="evenodd" fill="rgb(24, 142, 233)"
-                                      d="M14.323,5.821 C14.057,5.367 13.507,5.215 13.063,5.480 L13.063,5.480 C12.619,5.764 12.495,6.370 12.761,6.843 C13.382,7.922 13.684,9.210 13.560,10.592 C13.294,13.507 11.040,15.817 8.306,16.025 C4.988,16.271 2.219,13.431 2.254,9.948 C2.290,6.711 4.775,4.023 7.809,3.966 C7.827,3.966 7.845,3.966 7.845,3.966 L7.845,5.405 C7.845,5.821 8.271,6.086 8.608,5.859 L12.247,3.436 C12.566,3.227 12.566,2.735 12.247,2.527 L8.626,0.085 C8.289,-0.142 7.863,0.123 7.863,0.539 L7.863,1.997 C3.550,2.035 0.107,5.935 0.426,10.611 C0.692,14.529 3.656,17.691 7.330,17.975 C11.732,18.334 15.406,14.605 15.406,9.986 C15.423,8.471 15.015,7.033 14.323,5.821 Z"/>
+                            <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.8471 9.05507C22.4178 8.34832 21.5306 8.11274 20.8152 8.5249C20.0997 8.96678 19.8993 9.90912 20.3286 10.6452C21.3303 12.3238 21.8168 14.3262 21.6165 16.476C21.1872 21.0109 17.5526 24.6037 13.1453 24.9276C7.79353 25.3104 3.32893 20.8931 3.38616 15.4747C3.44342 10.4391 7.45006 6.25757 12.3439 6.16925C12.3725 6.16925 12.4012 6.16925 12.4012 6.16925V8.4071C12.4012 9.05507 13.088 9.46723 13.6318 9.11386L19.4987 5.3447C20.0138 5.02064 20.0138 4.25507 19.4987 3.9312L13.6604 0.132352C13.1166 -0.221024 12.4298 0.191136 12.4298 0.839104V3.10666C5.47538 3.16544 -0.0767081 9.23165 0.438408 16.5055C0.867704 22.6012 5.64708 27.519 11.5712 27.9607C18.6687 28.5201 24.5928 22.719 24.5928 15.5337C24.6215 13.1778 23.9632 10.9397 22.8471 9.05507Z" fill="#188EE9"/>
                             </svg>
+
                             <span class="start-over_text">Start over</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    
 </div>
 
 <div class="result-main_block">
@@ -133,9 +130,7 @@ $requirements = $requirement_template;
                                                                       data-post_id="<?php echo $post->ID; ?>"
                                                                       href="<?php echo $link ?>">View Deal</a></p>
                             <small class="text-muted">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998" viewBox="0 0 42 21" style="
-    margin-bottom: 2px;
-">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998" viewBox="0 0 42 21" style="margin-bottom: 2px; margin-right: 5px;">
  
 <defs>
     <style>
@@ -181,10 +176,8 @@ $requirements = $requirement_template;
                                                 data-post_id="<?php echo $post->ID; ?>" href="<?php echo $link ?>">View
                                 Deal</a></p>
                         <small class="text-muted">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998" viewBox="0 0 42 21" style="
-    margin-bottom: 2px;">
- 
-<defs>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998" viewBox="0 0 42 21" style="margin-bottom: 2px; margin-right: 5px;">
+ <defs>
     <style>
       .cls-1 {
         fill: #888;
@@ -221,4 +214,3 @@ $requirements = $requirement_template;
 	wp_reset_postdata();
 	?>
 </div>
-

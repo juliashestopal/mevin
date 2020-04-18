@@ -74,27 +74,38 @@ get_header();
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="1-1" name="on_ear" value="1" class="custom-control-input">
                                 <label class="custom-control-label" for="1-1">
-                                    <i class="icon icon-on-ear"></i>On-ear
-                                    <span class="text-muted">Comfortable and portable.</span>
+                                    <i class="icon icon-on-ear"></i>
+                                    <span class="label-wrap">
+                                        <span class="text-head">On-ear</span> 
+                                        <span class="text-muted">Comfortable and portable.</span>
+                                    </span>
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="1-2" name="over_ear" value="1" class="custom-control-input">
                                 <label class="custom-control-label" for="1-2">
-                                    <i class="icon icon-over-ear"></i>Over-ear
-                                    <span class="text-muted">Excellent comfort.</span>
+                                    <i class="icon icon-over-ear"></i>
+                                    <span class="label-wrap">
+                                        <span class="text-head">Over-ear</span> 
+                                        <span class="text-muted">Excellent comfort.</span>
+                                    </span>
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="1-3" name="in_ear" value="1" class="custom-control-input">
                                 <label class="custom-control-label" for="1-3">
-                                    <i class="icon icon-in-ear"></i>In-ear
-                                    <span class="text-muted">Ultra-portable design.</span>
+                                    <i class="icon icon-in-ear"></i>
+                                    <span class="label-wrap">
+                                        <span class="text-head">In-ear</span> 
+                                        <span class="text-muted">Ultra-portable design.</span>
+                                    </span>
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="1-4" name="any" value="form" class="custom-control-input">
-                                <label class="custom-control-label" for="1-4">Don't care</label>
+                                <label class="custom-control-label" for="1-4">
+                                    <span class="label-wrap">Don't care</span>
+                                </label>
                             </div>
                         </div>
 
@@ -102,11 +113,15 @@ get_header();
                         <div class="form-group">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="2-1" name="any" value="use" class="custom-control-input">
-                                <label class="custom-control-label" for="2-1">Music</label>
+                                <label class="custom-control-label" for="2-1">
+                                    <span class="label-wrap">Music</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="2-2" name="latency" value="1" class="custom-control-input">
-                                <label class="custom-control-label" for="2-2">Video</label>
+                                <label class="custom-control-label" for="2-2">
+                                    <span class="label-wrap">Video</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="2-3" name="latency" value="1" class="custom-control-input">
@@ -114,12 +129,16 @@ get_header();
                                 <script>
                                     jQuery("#2-3").parentCheckBox("#2-3-1");
                                 </script>
-                                <label class="custom-control-label" for="2-3">Gaming</label>
+                                <label class="custom-control-label" for="2-3">
+                                    <span class="label-wrap">Gaming</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="2-4" name="microphone" value="1"
                                        class="custom-control-input">
-                                <label class="custom-control-label" for="2-4">Calls</label>
+                                <label class="custom-control-label" for="2-4">
+                                    <span class="label-wrap">Calls</span> 
+                                </label>
                             </div>
                         </div>
 
@@ -127,20 +146,28 @@ get_header();
                         <div class="form-group">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-1" name="any" value="place" class="custom-control-input">
-                                <label class="custom-control-label" for="3-1">Home and Office</label>
+                                <label class="custom-control-label" for="3-1">
+                                   <span class="label-wrap">Home and Office</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-2" name="one_ear" value="1" class="custom-control-input">
-                                <label class="custom-control-label" for="3-2">Driving</label>
+                                <label class="custom-control-label" for="3-2">
+                                    <span class="label-wrap">Driving</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-3" name="foldable" value="1" class="custom-control-input">
-                                <label class="custom-control-label" for="3-3">Travel and Commute</label>
+                                <label class="custom-control-label" for="3-3">
+                                    <span class="label-wrap">Travel and Commute</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-4" name="sweat_resistant" value="1"
                                        class="custom-control-input">
-                                <label class="custom-control-label" for="3-4">Running and Working Out</label>
+                                <label class="custom-control-label" for="3-4">
+                                    <span class="label-wrap">Running and Working Out</span> 
+                                </label>
                             </div>
                         </div>
 
@@ -149,31 +176,45 @@ get_header();
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-1" name="battery_life" value="1" class="custom-control-input">
-                                <label class="custom-control-label" for="4-1">1 hour or less</label>
+                                <label class="custom-control-label" for="4-1">
+                                    <span class="label-wrap">1 hour or less</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-2" name="battery_life" value="2" class="custom-control-input">
-                                <label class="custom-control-label" for="4-2">2 hours</label>
+                                <label class="custom-control-label" for="4-2">
+                                    <span class="label-wrap">2 hours</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-3" name="battery_life" value="3" class="custom-control-input">
-                                <label class="custom-control-label" for="4-3">3 hours</label>
+                                <label class="custom-control-label" for="4-3">
+                                    <span class="label-wrap">3 hours</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-4" name="battery_life" value="4" class="custom-control-input">
-                                <label class="custom-control-label" for="4-4">4 hours</label>
+                                <label class="custom-control-label" for="4-4">
+                                    <span class="label-wrap">4 hours</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-5" name="battery_life" value="5" class="custom-control-input">
-                                <label class="custom-control-label" for="4-5">5 hours</label>
+                                <label class="custom-control-label" for="4-5">
+                                    <span class="label-wrap">5 hours</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-6" name="battery_life" value="4" class="custom-control-input">
-                                <label class="custom-control-label" for="4-6">6 hours</label>
+                                <label class="custom-control-label" for="4-6">
+                                    <span class="label-wrap">6 hours</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-7" name="battery_life" value="4" class="custom-control-input">
-                                <label class="custom-control-label" for="4-7">7 hours or more</label>
+                                <label class="custom-control-label" for="4-7">
+                                    <span class="label-wrap">7 hours or more</span> 
+                                </label>
                             </div>
                         </div>
 
@@ -183,12 +224,16 @@ get_header();
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="5-1" name="sound_quality" value="4.5"
                                        class="custom-control-input">
-                                <label class="custom-control-label" for="5-1">Important</label>
+                                <label class="custom-control-label" for="5-1">
+                                    <span class="label-wrap">Important</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="5-2" name="sound_quality" value="1"
                                        class="custom-control-input">
-                                <label class="custom-control-label" for="5-2">Don't care</label>
+                                <label class="custom-control-label" for="5-2">
+                                    <span class="label-wrap">Don't care</span> 
+                                </label>
                             </div>
                         </div>
 
@@ -198,12 +243,16 @@ get_header();
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="6-1" name="noise_cancellation" value="1"
                                        class="custom-control-input">
-                                <label class="custom-control-label" for="6-1">Important</label>
+                                <label class="custom-control-label" for="6-1">
+                                    <span class="label-wrap">Important</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="6-2" name="any" value="noise_cancellation"
                                        class="custom-control-input">
-                                <label class="custom-control-label" for="6-2">Don't care</label>
+                                <label class="custom-control-label" for="6-2">
+                                    <span class="label-wrap">Don't care</span> 
+                                </label>
                             </div>
                         </div>
 
@@ -212,29 +261,39 @@ get_header();
                         <div class="form-group">
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-1" name="price" value="50" class="custom-control-input">
-                                <label class="custom-control-label" for="7-1">Up to $50</label>
+                                <label class="custom-control-label" for="7-1">
+                                    <span class="label-wrap">Up to $50</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-2" name="price" value="75" class="custom-control-input">
-                                <label class="custom-control-label" for="7-2">$50 - $100</label>
+                                <label class="custom-control-label" for="7-2">
+                                    <span class="label-wrap">$50 - $100</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-3" name="price" value="125" class="custom-control-input">
-                                <label class="custom-control-label" for="7-3">$100 - $150</label>
+                                <label class="custom-control-label" for="7-3">
+                                    <span class="label-wrap">$100 - $150</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-4" name="price" value="200" class="custom-control-input">
-                                <label class="custom-control-label" for="7-4">$150 - $250</label>
+                                <label class="custom-control-label" for="7-4">
+                                    <span class="label-wrap">$150 - $250</span> 
+                                </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-5" name="price" value="250" class="custom-control-input">
-                                <label class="custom-control-label" for="7-5">$250 or more</label>
+                                <label class="custom-control-label" for="7-5">
+                                    <span class="label-wrap">$250 or more</span> 
+                                </label>
                             </div>
 
                         </div>
 
 
-                        <input type="submit" class="btn btn-primary" value="Submit">
+                        <input type="submit" class="btn btn-primary btn-quest" value="Submit">
                     </form>
                 </section>
                 <!-- Questionnaire start -->
