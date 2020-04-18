@@ -345,7 +345,7 @@ span.rating-number {
         pointer-events: none;
         content: "";
         background-color: #fff;
-        border: 2px solid #adb5bd;
+        border: 2px solid #b3b3b3;
     }
     .custom-control-label::after {
         position: absolute;
@@ -378,9 +378,13 @@ span.rating-number {
         .label-wrap {
             margin-left: 16px;
             font-size: 20px;
-        }
-        .text-head {
-            font-size: 20px;
+            .text-head {
+                font-size: 20px;
+                color: #333333;
+            }
+            .text-desc {
+                color: #999999;
+            }
         }
     }
     .btn-quest {

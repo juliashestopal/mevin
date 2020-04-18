@@ -10819,7 +10819,7 @@ span.rating-number {
   pointer-events: none;
   content: "";
   background-color: #fff;
-  border: 2px solid #adb5bd; }
+  border: 2px solid #b3b3b3; }
 
 .questionnaire .custom-control-label::after {
   position: absolute;
@@ -10857,8 +10857,11 @@ span.rating-number {
   .questionnaire label .label-wrap {
     margin-left: 16px;
     font-size: 20px; }
-  .questionnaire label .text-head {
-    font-size: 20px; }
+    .questionnaire label .label-wrap .text-head {
+      font-size: 20px;
+      color: #333333; }
+    .questionnaire label .label-wrap .text-desc {
+      color: #999999; }
 
 .questionnaire .btn-quest {
   background: #188ee9;

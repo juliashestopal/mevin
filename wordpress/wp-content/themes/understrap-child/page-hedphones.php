@@ -77,7 +77,7 @@ get_header();
                                     <i class="icon icon-on-ear"></i>
                                     <span class="label-wrap">
                                         <span class="text-head">On-ear</span> 
-                                        <span class="text-muted">Comfortable and portable.</span>
+                                        <span class="text-desc">Comfortable and portable.</span>
                                     </span>
                                 </label>
                             </div>
@@ -87,7 +87,7 @@ get_header();
                                     <i class="icon icon-over-ear"></i>
                                     <span class="label-wrap">
                                         <span class="text-head">Over-ear</span> 
-                                        <span class="text-muted">Excellent comfort.</span>
+                                        <span class="text-desc">Excellent comfort.</span>
                                     </span>
                                 </label>
                             </div>
@@ -97,14 +97,16 @@ get_header();
                                     <i class="icon icon-in-ear"></i>
                                     <span class="label-wrap">
                                         <span class="text-head">In-ear</span> 
-                                        <span class="text-muted">Ultra-portable design.</span>
+                                        <span class="text-desc">Ultra-portable design.</span>
                                     </span>
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="1-4" name="any" value="form" class="custom-control-input">
                                 <label class="custom-control-label" for="1-4">
-                                    <span class="label-wrap">Don't care</span>
+                                    <span class="label-wrap">
+                                        <span class="text-head">Don't care</span>    
+                                    </span>
                                 </label>
                             </div>
                         </div>
@@ -114,13 +116,19 @@ get_header();
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="2-1" name="any" value="use" class="custom-control-input">
                                 <label class="custom-control-label" for="2-1">
-                                    <span class="label-wrap">Music</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Music</span>
+                                        <span class="text-desc">Most headphones are designed for music.</span>
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="2-2" name="latency" value="1" class="custom-control-input">
                                 <label class="custom-control-label" for="2-2">
-                                    <span class="label-wrap">Video</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Video</span>
+                                        <span class="text-desc">Low latency between sound and video is important.</span>
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
@@ -130,14 +138,20 @@ get_header();
                                     jQuery("#2-3").parentCheckBox("#2-3-1");
                                 </script>
                                 <label class="custom-control-label" for="2-3">
-                                    <span class="label-wrap">Gaming</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Gaming</span>
+                                        <span class="text-desc">Low latency and a microphone are recommended.</span>
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="2-4" name="microphone" value="1"
                                        class="custom-control-input">
                                 <label class="custom-control-label" for="2-4">
-                                    <span class="label-wrap">Calls</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Calls</span>
+                                        <span class="text-desc">You'll need a microphone for calls.</span>
+                                    </span> 
                                 </label>
                             </div>
                         </div>
@@ -147,26 +161,34 @@ get_header();
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-1" name="any" value="place" class="custom-control-input">
                                 <label class="custom-control-label" for="3-1">
-                                   <span class="label-wrap">Home and Office</span> 
+                                   <span class="label-wrap">
+                                        <span class="text-head">Home and Office</span>
+                                   </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-2" name="one_ear" value="1" class="custom-control-input">
                                 <label class="custom-control-label" for="3-2">
-                                    <span class="label-wrap">Driving</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Driving</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-3" name="foldable" value="1" class="custom-control-input">
                                 <label class="custom-control-label" for="3-3">
-                                    <span class="label-wrap">Travel and Commute</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Travel and Commute</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" id="3-4" name="sweat_resistant" value="1"
                                        class="custom-control-input">
                                 <label class="custom-control-label" for="3-4">
-                                    <span class="label-wrap">Running and Working Out</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Running and Working Out</span>    
+                                    </span> 
                                 </label>
                             </div>
                         </div>
@@ -177,43 +199,57 @@ get_header();
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-1" name="battery_life" value="1" class="custom-control-input">
                                 <label class="custom-control-label" for="4-1">
-                                    <span class="label-wrap">1 hour or less</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">1 hour or less</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-2" name="battery_life" value="2" class="custom-control-input">
                                 <label class="custom-control-label" for="4-2">
-                                    <span class="label-wrap">2 hours</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">2 hours</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-3" name="battery_life" value="3" class="custom-control-input">
                                 <label class="custom-control-label" for="4-3">
-                                    <span class="label-wrap">3 hours</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">3 hours</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-4" name="battery_life" value="4" class="custom-control-input">
                                 <label class="custom-control-label" for="4-4">
-                                    <span class="label-wrap">4 hours</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">4 hours</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-5" name="battery_life" value="5" class="custom-control-input">
                                 <label class="custom-control-label" for="4-5">
-                                    <span class="label-wrap">5 hours</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">5 hours</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-6" name="battery_life" value="4" class="custom-control-input">
                                 <label class="custom-control-label" for="4-6">
-                                    <span class="label-wrap">6 hours</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">6 hours</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="4-7" name="battery_life" value="4" class="custom-control-input">
                                 <label class="custom-control-label" for="4-7">
-                                    <span class="label-wrap">7 hours or more</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">7 hours or more</span>    
+                                    </span> 
                                 </label>
                             </div>
                         </div>
@@ -225,14 +261,19 @@ get_header();
                                 <input type="radio" id="5-1" name="sound_quality" value="4.5"
                                        class="custom-control-input">
                                 <label class="custom-control-label" for="5-1">
-                                    <span class="label-wrap">Important</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Important</span>
+                                        <span class="text-desc">If you listen to high-res audio files and care about sound quality.</span>
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="5-2" name="sound_quality" value="1"
                                        class="custom-control-input">
                                 <label class="custom-control-label" for="5-2">
-                                    <span class="label-wrap">Don't care</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Don't care</span>    
+                                    </span> 
                                 </label>
                             </div>
                         </div>
@@ -244,14 +285,19 @@ get_header();
                                 <input type="radio" id="6-1" name="noise_cancellation" value="1"
                                        class="custom-control-input">
                                 <label class="custom-control-label" for="6-1">
-                                    <span class="label-wrap">Important</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Important</span>
+                                        <span class="text-desc">Recommended if you're spending a lot of time in noisy environments.</span>
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="6-2" name="any" value="noise_cancellation"
                                        class="custom-control-input">
                                 <label class="custom-control-label" for="6-2">
-                                    <span class="label-wrap">Don't care</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Don't care</span>    
+                                    </span> 
                                 </label>
                             </div>
                         </div>
@@ -262,31 +308,41 @@ get_header();
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-1" name="price" value="50" class="custom-control-input">
                                 <label class="custom-control-label" for="7-1">
-                                    <span class="label-wrap">Up to $50</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">Up to $50</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-2" name="price" value="75" class="custom-control-input">
                                 <label class="custom-control-label" for="7-2">
-                                    <span class="label-wrap">$50 - $100</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">$50 - $100</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-3" name="price" value="125" class="custom-control-input">
                                 <label class="custom-control-label" for="7-3">
-                                    <span class="label-wrap">$100 - $150</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">$100 - $150</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-4" name="price" value="200" class="custom-control-input">
                                 <label class="custom-control-label" for="7-4">
-                                    <span class="label-wrap">$150 - $250</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">$150 - $250</span>    
+                                    </span> 
                                 </label>
                             </div>
                             <div class="custom-control custom-radio">
                                 <input type="radio" id="7-5" name="price" value="250" class="custom-control-input">
                                 <label class="custom-control-label" for="7-5">
-                                    <span class="label-wrap">$250 or more</span> 
+                                    <span class="label-wrap">
+                                        <span class="text-head">$250 or more</span>    
+                                    </span> 
                                 </label>
                             </div>
 
