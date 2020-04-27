@@ -1,0 +1,97 @@
+{
+  "0": {
+    "question": "What type of jobs are you planning to do with your driver?",
+    "name": "voltage",
+    "type": "checkbox",
+    "answers": {
+      "0": {
+        "title": "Driving screws"
+      },
+      "1": {
+        "title": "Drilling holes",
+        "value": 1
+      }
+    }
+  },
+  "1": {
+    "question": "What type of project are you working on?",
+    "name": "battery",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Small home projects & DIY"
+      },
+      "1": {
+        "title": "Medium sized projects",
+        "value": 1
+      },
+      "2": {
+        "title": "Large scale professional projects",
+        "value": 2
+      }
+    }
+  },
+  "2": {
+    "question": "What type of surfaces you'll be working on?",
+    "name": "voltage",
+    "type": "checkbox",
+    "answers": {
+      "0": {
+        "title": "Soft",
+        "description": "Wood, Drywall, etc."
+      },
+      "1": {
+        "title": "Hard",
+        "description": "Concrete, Iron, etc.",
+        "value": 2
+      }
+    }
+  },
+  "3": {
+    "question": "Do you need to use it in tight spots?",
+    "type": "radio",
+    "name": "length",
+    "answers": {
+      "0": {
+        "title": "Yes"
+      },
+      "1": {
+        "title": "No",
+        "value": 1
+      }
+    }
+  },
+  "4": {
+    "question": "Will you be carrying it around a lot?",
+    "name": "case",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "value": 1
+      },
+      "1": {
+        "title": "No"
+      }
+    }
+  },
+  "5": {
+    "question": "What’s your budget?",
+    "type": "radio",
+    "name": "price",
+    "answers": {
+      "0": {
+        "title": "$100",
+        "value": 100
+      },
+      "1": {
+        "title": "$100-$150",
+        "value": 125
+      },
+      "2": {
+        "title": "$200 or more",
+        "value": 200
+      }
+    }
+  }
+}
