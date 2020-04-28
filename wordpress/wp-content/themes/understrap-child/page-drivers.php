@@ -79,6 +79,7 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
                             $i = 0;
                             ?>
                             <h3><?php echo $object->question; ?></h3>
+                                <span class="question-description"><?php echo $object->description; ?></span>
                             <div class="form-group">
                                 <?php foreach ($object->answers as $answer => $key) {
                                     $i++;
