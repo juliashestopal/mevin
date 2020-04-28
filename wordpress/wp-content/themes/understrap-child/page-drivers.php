@@ -39,7 +39,7 @@ foreach ($keywords_library as $keys) {
 get_header();
 
 
-$qestions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri() . "/includes/questions-drivers.json"), false);
+$questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri() . "/includes/questions-drivers.json"), false);
 
 ?>
 
@@ -75,18 +75,18 @@ $qestions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri()
                         <input type="hidden" name="atag" value="<?php echo $atag; ?>">
 
                         <?php
-                        foreach ($qestions as $question => $object) {
+                        foreach ($questions as $question => $object) {
                             $i = 0;
                             ?>
                             <h3><?php echo $object->question; ?></h3>
                             <div class="form-group">
-                                <?php foreach ($object->answers as $answer=>$key) {
+                                <?php foreach ($object->answers as $answer => $key) {
                                     $i++;
                                     $id = $question . '-' . $i;
                                     ?>
                                     <div class="custom-control custom-<?php echo $object->type; ?>">
                                         <input type="<?php echo $object->type; ?>" id="<?php echo $id; ?>"
-                                               name="<?php echo $object->name; ?>" value="<?php echo $key->value ?: 'any'; ?>"
+                                               name="<?php echo $key->name; ?>" value="<?php echo $key->value; ?>"
                                                class="custom-control-input">
                                         <label class="custom-control-label" for="<?php echo $id; ?>">
                                             <span class="label-wrap">

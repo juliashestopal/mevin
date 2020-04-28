@@ -1,16 +1,28 @@
 <?php
-$args=array(
-  'post_type'=> 'product',
-  'product_cat'=> $_GET['product_cat'],
-  'post_status'=> 'publish',
-  'posts_per_page' => 100,
-  'meta_query' => array(
-    array( //hide out of stock (price<1)
-      'key' => '_price',
-      'value' => 0,
-      'compare' => '>',
+
+foreach ($_GET as $get=>$parameter) {
+    if (is_array($parameter)) {
+        $str_arr = preg_split("/\,/", $parameter[0]);
+        foreach ($str_arr as $value) {
+            list($k, $v) = explode('=', $value);
+            $_GET[$k] = $v;
+        }
+        unset($_GET[$get]);
+    }
+}
+
+$args = array(
+    'post_type' => 'product',
+    'product_cat' => $_GET['product_cat'],
+    'post_status' => 'publish',
+    'posts_per_page' => 100,
+    'meta_query' => array(
+        array( //hide out of stock (price<1)
+            'key' => '_price',
+            'value' => 0,
+            'compare' => '>',
+        )
     )
-  )
 );
 
 

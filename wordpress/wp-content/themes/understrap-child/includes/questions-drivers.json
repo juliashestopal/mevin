@@ -1,74 +1,83 @@
 {
   "0": {
     "question": "What type of jobs are you planning to do with your driver?",
-    "name": "voltage",
     "type": "checkbox",
     "answers": {
       "0": {
-        "title": "Driving screws"
+        "title": "Driving screws",
+        "name": "any",
+        "value": "jobs"
       },
       "1": {
         "title": "Drilling holes",
-        "value": 1
+        "name": "voltage",
+        "value": 12
       }
     }
   },
   "1": {
     "question": "What type of project are you working on?",
-    "name": "battery",
     "type": "radio",
     "answers": {
       "0": {
-        "title": "Small home projects & DIY"
+        "title": "Small home projects & DIY",
+        "name": "any",
+        "value": "projects"
       },
       "1": {
         "title": "Medium sized projects",
-        "value": 1
+        "name": "medium_projects[]",
+        "value": "battery=2.5,brushless_motor=1,voltage=12"
       },
       "2": {
         "title": "Large scale professional projects",
-        "value": 2
+        "name": "large_projects[]",
+        "value": "battery=2.5,brushless_motor=1,voltage=18"
       }
     }
   },
   "2": {
     "question": "What type of surfaces you'll be working on?",
-    "name": "voltage",
     "type": "checkbox",
     "answers": {
       "0": {
         "title": "Soft",
+        "name": "any",
+        "value": "surfaces",
         "description": "Wood, Drywall, etc."
       },
       "1": {
         "title": "Hard",
-        "description": "Concrete, Iron, etc.",
-        "value": 2
+        "name": "voltage",
+        "value": 18,
+        "description": "Concrete, Iron, etc."
       }
     }
   },
   "3": {
     "question": "Do you need to use it in tight spots?",
     "type": "radio",
-    "name": "length",
     "answers": {
       "0": {
-        "title": "Yes"
+        "title": "Yes",
+        "name": "any",
+        "value": "spots"
       },
       "1": {
         "title": "No",
-        "value": 1
+        "name": "spots[]",
+        "value": "length=6,led_light=1,weight=2.3"
       }
     }
   },
   "4": {
     "question": "Will you be carrying it around a lot?",
-    "name": "case",
     "type": "radio",
     "answers": {
       "0": {
         "title": "Yes",
-        "value": 1
+        "name": "carrying[]",
+        "value": "case=1,weight=2.3"
       },
       "1": {
         "title": "No"
@@ -78,18 +87,20 @@
   "5": {
     "question": "What’s your budget?",
     "type": "radio",
-    "name": "price",
     "answers": {
       "0": {
         "title": "$100",
+        "name": "price",
         "value": 100
       },
       "1": {
         "title": "$100-$150",
+        "name": "price",
         "value": 125
       },
       "2": {
         "title": "$200 or more",
+        "name": "price",
         "value": 200
       }
     }

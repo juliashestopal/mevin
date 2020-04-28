@@ -93,5 +93,51 @@
             }
         }
     },
-    "mobile": {}
+    "impact-drivers": {
+        "strings": {
+            "requirements": {
+                "voltage": {
+                    "title": "Voltage",
+                    "name": "voltage",
+                    "slug": "voltage",
+                    "description": "Voltage",
+                    "color": "#90c9f4",
+                    "not_match_text": "Not Voltage"
+                },
+                "case": {
+                    "title": "Case",
+                    "name": "case",
+                    "slug": "case",
+                    "description": "Case",
+                    "color": "#90c9f4",
+                    "not_match_text": "Not Voltage"
+                },
+                "battery": {
+                    "title": "battery",
+                    "name": "battery",
+                    "slug": "battery",
+                    "description": "Battery",
+                    "color": "#90c9f4",
+                    "not_match_text": "Not Voltage"
+                },
+                "brushless_motor": {
+                    "title": "Brushless Motor",
+                    "name": "brushless_motor",
+                    "slug": "brushless_motor",
+                    "description": "Brushless Motor",
+                    "color": "#90c9f4",
+                    "not_match_text": "Not Voltage"
+                },
+                "price": {
+                    "title": "Price",
+                    "name": "Price",
+                    "slug": "_price",
+                    "description": "$%s% budget",
+                    "color": "#9ac5d5",
+                    "match_text": "In your budget",
+                    "not_match_text": "Not in your budget"
+                }
+            }
+        }
+    }
 }
