@@ -27,6 +27,7 @@ $args = array(
 
 
 $requirements = $_GET;
+$requirements = array_filter($requirements);
 unset($requirements['product_cat']);
 unset($requirements['atag']);
 unset($requirements['any']);
