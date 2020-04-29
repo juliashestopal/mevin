@@ -119,10 +119,12 @@ $requirements = $requirement_template;
                             <ul class="matches_list">
 								<?php foreach ( $matches_requirement as $key => $value ) {
 									$text = ! empty( $value->match_text ) ? str_replace( '%s%', $value->value, $value->match_text ) : $value->title;
+                                    $text = str_replace('%p%', get_post_meta($post->ID, $key, true), $text);
 									echo "<li class = 'matches_match'>" . $text . "</li>";
 								}
 								foreach ( $non_matches_requirement as $key => $value ) {
-									$text = ! empty( $value->match_text ) ? str_replace( '%s%', $value->value, $value->not_match_text ) : $value->title;
+                                    $text = !empty( $value->not_match_text ) ? str_replace( '%s%', $value->value, $value->not_match_text ) : $value->title;
+                                    $text = str_replace('%p%', get_post_meta($post->ID, $key, true), $text);
 									echo "<li class = 'non_matches_match'>" . $text . "</li>";
 								} ?>
                             </ul>
@@ -198,11 +200,13 @@ $requirements = $requirement_template;
                                 Needs Matched </p>
                             <ul class="matches_list">
 								<?php foreach ( $matches_requirement as $key => $value ) {
-									$text = ! empty( $value->match_text ) ? str_replace( '%s%', $value->value, $value->match_text ) : $value->title;
+                                    $text = ! empty( $value->match_text ) ? str_replace( '%s%', $value->value, $value->match_text ) : $value->title;
+                                    $text = str_replace('%p%', get_post_meta($post->ID, $key, true), $text);
 									echo "<li class = 'matches_match'>" . $text . "</li>";
 								}
 								foreach ( $non_matches_requirement as $key => $value ) {
-									$text = ! empty( $value->match_text ) ? str_replace( '%s%', $value->value, $value->not_match_text ) : $value->title;
+									$text = !empty( $value->not_match_text ) ? str_replace( '%s%', $value->value, $value->not_match_text ) : $value->title;
+                                    $text = str_replace('%p%', get_post_meta($post->ID, $key, true), $text);
 									echo "<li class = 'non_matches_match'>" . $text . "</li>";
 								} ?>
                             </ul>

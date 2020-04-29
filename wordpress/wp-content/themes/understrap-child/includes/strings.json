@@ -100,25 +100,46 @@
                     "title": "Voltage",
                     "name": "voltage",
                     "slug": "voltage",
-                    "description": "Voltage",
-                    "color": "#90c9f4",
-                    "not_match_text": "Not Voltage"
+                    "description": "Voltage, %s%V or more",
+                    "color": "#c5a0f7",
+                    "match_text": "%p%V",
+                    "not_match_text": "%p%V"
                 },
                 "case": {
-                    "title": "Case",
+                    "title": "Carrying case",
                     "name": "case",
                     "slug": "case",
-                    "description": "Case",
-                    "color": "#90c9f4",
-                    "not_match_text": "Not Voltage"
+                    "description": "Carrying case",
+                    "color": "#f1bf94",
+                    "match_text": "Carrying case",
+                    "not_match_text": "No case"
+                },
+                "length": {
+                    "title": "Length",
+                    "name": "length",
+                    "slug": "length",
+                    "description": "Short length for tight spots",
+                    "color": "#8ad8bf",
+                    "match_text": "Compact %p%",
+                    "not_match_text": "%p%"
+                },
+                "weight": {
+                    "title": "Weight",
+                    "name": "weight",
+                    "slug": "weight",
+                    "description": "Light weight",
+                    "color": "#f1bf94",
+                    "match_text": "Light weight %p%",
+                    "not_match_text": "%p%"
                 },
                 "battery": {
                     "title": "battery",
                     "name": "battery",
                     "slug": "battery",
-                    "description": "Battery",
+                    "description": "%s%.0Ah battery or more",
                     "color": "#90c9f4",
-                    "not_match_text": "Not Voltage"
+                    "match_text": "%p%Ah battery",
+                    "not_match_text": "%p%Ah battery"
                 },
                 "brushless_motor": {
                     "title": "Brushless Motor",
@@ -127,6 +148,15 @@
                     "description": "Brushless Motor",
                     "color": "#90c9f4",
                     "not_match_text": "Not Voltage"
+                },
+                "led_light": {
+                    "title": "LED light",
+                    "name": "led_light",
+                    "slug": "led_light",
+                    "description": "LED light",
+                    "color": "#ef9e9e",
+                    "match_text": "LED light",
+                    "not_match_text": "No light"
                 },
                 "price": {
                     "title": "Price",
