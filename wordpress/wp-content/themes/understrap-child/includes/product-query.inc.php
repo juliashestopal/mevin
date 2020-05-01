@@ -25,6 +25,8 @@ $args = array(
     )
 );
 
+$cat = (string) $_GET['product_cat'];
+$strings_json = (object) json_decode( file_get_contents( get_stylesheet_directory_uri() . "/includes/strings.json" ), false )->$cat;
 
 $requirements = $_GET;
 $requirements = array_filter($requirements);
@@ -55,7 +57,7 @@ function getRelevantPosts($args){
 
 function calculate_relevance( $post, $queryArray ){
   $raw_score = 1;
-  global $requirements_count;
+  global $requirements_count, $strings_json;
   $rating_boost = (float) get_post_meta( $post->ID , 'rating', true ) / (float) get_post_meta( $post->ID , 'review_count', true );
   foreach ($queryArray as $key => $value) {
     if ($key !== 'any' && $key !== 'product_cat' && $key !== 'atag') { //not "any"
@@ -65,10 +67,10 @@ function calculate_relevance( $post, $queryArray ){
         $gprice = stats_dens_normal($rprice, $rprice*.1, $pprice) / stats_dens_normal($rprice, $rprice*.1, $rprice);
         //$raw_score = $raw_score + (1 / $price);
       } else { // if not price
-        if (get_post_meta( $post->ID , $key, true ) >= $value) {
-          //$raw_score = $raw_score + get_post_meta( $post->ID , $key, true );
-          $raw_score++;
-          $post->requirements_met++;
+          $operator = $strings_json->strings->requirements->$key->match_if ?: '>=';
+          if ( compare_by_operator(get_post_meta( $post->ID , $key, true ), $operator,$value) ) {
+            $raw_score++;
+            $post->requirements_met++;
         }
       }
     }

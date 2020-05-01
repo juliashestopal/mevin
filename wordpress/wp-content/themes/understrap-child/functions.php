@@ -81,3 +81,84 @@ function url_options_page(){
     }
     require_once('includes/url_param_pages/url-param-output-settings.php');
 }
+
+
+function get_category_meta_values($category, $meta)
+{
+    global $wpdb;
+    $sql = "SELECT post_id, (cast(meta_value as UNSIGNED)) as 'value'
+                FROM $wpdb->postmeta
+                LEFT JOIN $wpdb->posts on post_id = ID
+                LEFT JOIN $wpdb->term_relationships as t ON post_id = t.object_id
+                WHERE meta_key = '{$meta}'
+                AND t.term_taxonomy_id = {$category}
+                AND post_status = 'publish'";
+    $query = $wpdb->prepare($sql);
+    $query_results = $wpdb->get_results($query);
+    $final_result = array();
+
+    foreach ($query_results as $result) {
+        $final_result[$result->post_id] = (int)$result->value;
+    }
+    return $final_result;
+}
+
+function update_product_percentage_values($post_ID, $post, $update)
+{
+    global $post;
+    if ($post->post_type !== 'product') return;
+
+    $product_category_id = get_the_terms($post->ID, 'product_cat')[0]->term_id;
+    $keys_to_change = array();
+
+    foreach (get_fields() as $field => $value) {
+        if (strpos($field, '_percentage') !== false) {
+            array_push($keys_to_change, explode("_", $field, 2)[0]);
+        }
+    }
+
+    foreach ($keys_to_change as $key) {
+        $category_key_values = get_category_meta_values($product_category_id, $key);
+        $category_key_values[$post->ID] = (int)get_post_meta($post->ID, $key, true) ?: 0;
+        $highest_value = max($category_key_values);
+
+        foreach ($category_key_values as $product_Id => $value) {
+            $category_key_values[$product_Id] = array();
+            $category_key_values[$product_Id]['value'] = $value;
+            if ($highest_value != 0) {
+                if ($value === $highest_value) {
+                    $category_key_values[$product_Id]['percentage'] = 100;
+                } else {
+                    $category_key_values[$product_Id]['percentage'] = round(($value * 100) / $highest_value);
+                }
+            }
+            update_field($key . '_percentage', $category_key_values[$product_Id]['percentage'], $product_Id);
+        }
+    }
+}
+
+add_action('save_post', 'update_product_percentage_values', 10, 3);
+
+
+function compare_by_operator($a, $operator, $b)
+{
+    switch ($operator) {
+        case '<':
+            return $a < $b;
+            break;
+        case '<=':
+            return $a <= $b;
+            break;
+        case '>':
+            return $a > $b;
+            break;
+        case '>=':
+            return $a >= $b;
+            break;
+        case '===':
+            return $a === $b;
+            break;
+        default :
+            null;
+    }
+}

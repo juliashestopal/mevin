@@ -84,7 +84,8 @@ $requirements = $requirement_template;
 					$non_matches_requirement->$requirement = $key;
 				}
 			} else {
-				if ( get_post_meta( $post->ID, $key->slug, true ) >= $key->value ) {
+			    $operator = $strings->strings->requirements->$requirement->match_if ?: '>=';
+				if ( compare_by_operator(get_post_meta( $post->ID, $key->slug, true ), $operator, $key->value) ) {
 					$matches_requirement->$requirement = $key;
 				} else {
 					$non_matches_requirement->$requirement = $key;

@@ -114,23 +114,25 @@
                     "match_text": "Carrying case",
                     "not_match_text": "No case"
                 },
-                "length": {
+                "length_percentage": {
                     "title": "Length",
-                    "name": "length",
-                    "slug": "length",
+                    "name": "Length",
+                    "slug": "length_percentage",
                     "description": "Short length for tight spots",
                     "color": "#8ad8bf",
-                    "match_text": "Compact %p%",
-                    "not_match_text": "%p%"
+                    "match_text": "Compact %p% inches",
+                    "not_match_text": "%p% inches",
+                    "match_if": ">="
                 },
-                "weight": {
+                "weight_percentage": {
                     "title": "Weight",
                     "name": "weight",
-                    "slug": "weight",
+                    "slug": "length_percentage",
                     "description": "Light weight",
                     "color": "#f1bf94",
-                    "match_text": "Light weight %p%",
-                    "not_match_text": "%p%"
+                    "match_text": "Light weight %p% lbs",
+                    "not_match_text": "%p% lbs",
+                    "match_if": ">="
                 },
                 "battery": {
                     "title": "battery",
