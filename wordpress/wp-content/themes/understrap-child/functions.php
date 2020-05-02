@@ -162,3 +162,23 @@ function compare_by_operator($a, $operator, $b)
             null;
     }
 }
+
+//Adding operator metadata to every ACF field
+add_action('acf/render_field_settings', 'my_admin_only_render_field_settings');
+
+function my_admin_only_render_field_settings( $field ) {
+
+	acf_render_field_setting( $field, array(
+		'label'			=> __('Compare by'),
+		'instructions'	=> '',
+		'name'			=> 'compare',
+		'type'			=> 'select',
+      		'choices' => array(
+			'>=',
+			'<=',
+			'=='
+		),
+		'ui'			=> 1,
+	), true);
+
+}

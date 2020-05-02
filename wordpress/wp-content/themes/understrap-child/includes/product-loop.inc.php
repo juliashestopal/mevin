@@ -113,6 +113,9 @@ $requirements = $requirement_template;
                             <p>
                                 <i class="fa rating rating-<?php echo number_format( round( get_post_meta( $post->ID, 'rating', true ) / 5, 1 ) * 5, 1, '-', ',' ); ?>"></i>
 								<span class = "rating-number"><?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?></span>
+                                <?php
+                                echo "Relevance: " . $post->relevance;
+                                ?>
                             </p>
 
                             <p class="matches_count"> <?php echo count( (array) $matches_requirement ) . '/' . count( (array) $requirements ); ?>
