@@ -1,7 +1,6 @@
 {
   "0": {
     "question": "What type of jobs are you planning to do with your driver?",
-    "description": "What will be the main thing you are planning to use it for?",
     "type": "checkbox",
     "answers": {
       "0": {
@@ -56,11 +55,11 @@
   },
   "3": {
     "question": "Do you need to use it in tight spots?",
-    "description": "Smaller impact drivers are easier to operate in tight spaces or using one hand, but they are generally less powerful.",
     "type": "radio",
     "answers": {
       "0": {
         "title": "Yes",
+        "description": "Smaller, less powerful drivers are easier to use in tight spaces",
         "name": "spots[]",
         "value": "length_percentage=60,led_light=1,weight_percentage=60"
       },
@@ -72,7 +71,6 @@
   },
   "4": {
     "question": "Will you be carrying it around a lot?",
-    "description": "Are you using the tool on various locations on a day-to-day basis?",
     "type": "radio",
     "answers": {
       "0": {
