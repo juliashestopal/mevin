@@ -62,7 +62,7 @@
       "0": {
         "title": "Yes",
         "name": "spots[]",
-        "value": "length_percentage=50,led_light=1,weight_percentage=50"
+        "value": "length_percentage=60,led_light=1,weight_percentage=60"
       },
       "1": {
         "title": "No",
