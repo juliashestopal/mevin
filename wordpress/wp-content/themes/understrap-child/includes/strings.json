@@ -120,7 +120,7 @@
                     "slug": "length_percentage",
                     "description": "Short length for tight spots",
                     "color": "#8ad8bf",
-                    "match_text": "Compact (%p%\") inches",
+                    "match_text": "Compact (%p%\")",
                     "not_match_text": "Longer than average (%p%\")",
                     "match_if": "<="
                 },
