@@ -149,8 +149,8 @@
                     "slug": "brushless_motor",
                     "description": "Brushless Motor",
                     "color": "#90c9f4",
-                    "match_text": "Brushed motor",
-                    "not_match_text": "Brushed motor"
+                    "match_text": "Brushless Motor",
+                    "not_match_text": "No brushless motor"
                 },
                 "led_light": {
                     "title": "LED light",
