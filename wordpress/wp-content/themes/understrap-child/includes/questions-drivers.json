@@ -61,7 +61,7 @@
         "title": "Yes",
         "description": "Smaller, less powerful drivers are easier to use in tight spaces",
         "name": "spots[]",
-        "value": "length_percentage=60,led_light=1,weight_percentage=60"
+        "value": "length=5.5,led_light=1,weight=2.2"
       },
       "1": {
         "title": "No",

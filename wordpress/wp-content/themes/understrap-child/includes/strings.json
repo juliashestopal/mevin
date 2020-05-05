@@ -114,20 +114,20 @@
                     "match_text": "Carrying case",
                     "not_match_text": "No case"
                 },
-                "length_percentage": {
+                "length": {
                     "title": "Length",
                     "name": "Length",
-                    "slug": "length_percentage",
+                    "slug": "length",
                     "description": "Short length for tight spots",
                     "color": "#8ad8bf",
                     "match_text": "Compact (%p%\")",
                     "not_match_text": "Longer than average (%p%\")",
                     "match_if": "<="
                 },
-                "weight_percentage": {
+                "weight": {
                     "title": "Weight",
                     "name": "weight",
-                    "slug": "weight_percentage",
+                    "slug": "weight",
                     "description": "Light weight",
                     "color": "#f1bf94",
                     "match_text": "Light weight (%p% lbs)",

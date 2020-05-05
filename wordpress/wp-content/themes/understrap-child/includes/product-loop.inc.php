@@ -63,6 +63,10 @@ $requirements = $requirement_template;
 	$number_of_items = 0;
 	while ( $posts->have_posts() ) : $posts->the_post();
 
+		//increment view count
+		$views_count = (int) get_post_meta( $post->ID, 'views', true );
+  		update_post_meta($post->ID, 'views', ($views_count+1) );
+	
 		$number_of_items ++;
 		$product = wc_get_product( $post->ID );
 		$count   = (int) get_post_meta( $post->ID, 'clicks', true );
@@ -101,8 +105,8 @@ $requirements = $requirement_template;
                         <div class="product-image">
                             <span class="product-match-number"
                                   id='product-match-number-<?php echo $number_of_items; ?>'><?php echo $number_of_items == 1 ? "#1 Best Match" : "#{$number_of_items}"; ?></span>
-                            <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
-                                 alt="<?php the_title(); ?>">
+                            <a target="_blank" class="track-click" href="<?php echo $link ?>"><img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
+                                 alt="<?php the_title(); ?>"><a/>
                         </div>
                     </div>
                     <div class="col-md-8 d-none d-sm-block block-needs">
@@ -113,9 +117,6 @@ $requirements = $requirement_template;
                             <p>
                                 <i class="fa rating rating-<?php echo number_format( round( get_post_meta( $post->ID, 'rating', true ) / 5, 1 ) * 5, 1, '-', ',' ); ?>"></i>
 								<span class = "rating-number"><?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?></span>
-                                <?php
-                                echo "Relevance: " . $post->relevance;
-                                ?>
                             </p>
 
                             <p class="matches_count"> <?php echo count( (array) $matches_requirement ) . '/' . count( (array) $requirements ); ?>
