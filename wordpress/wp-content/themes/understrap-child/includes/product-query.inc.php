@@ -5,7 +5,9 @@ foreach ($_GET as $get=>$parameter) {
         $str_arr = preg_split("/\,/", $parameter[0]);
         foreach ($str_arr as $value) {
             list($k, $v) = explode('=', $value);
-            $_GET[$k] = $v;
+            if($_GET[$k] < $v) {
+                $_GET[$k] = $v;
+            }
         }
         unset($_GET[$get]);
     }
