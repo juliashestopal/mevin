@@ -11,6 +11,7 @@
 defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
+global $product_cat;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -35,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
-                    <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
+                    <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( $product_cat .'/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
 						<img class="logo" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/askmevin.png" alt="<?php bloginfo( 'name' ).'-'.bloginfo( 'description' ); ?>"><br />
 						<?php if($post->post_title != 'Results'): ?>
                             <span class="description"><?php bloginfo( 'description' ); ?></span>

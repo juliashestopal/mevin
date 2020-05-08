@@ -54,7 +54,7 @@
     }
   },
   "3": {
-    "question": "Do you need to use it in tight spots?",
+    "question": "Do you need to use it in really tight spots?",
     "type": "radio",
     "answers": {
       "0": {
@@ -101,7 +101,7 @@
       "2": {
         "title": "$200 or more",
         "name": "price",
-        "value": 200
+        "value": 250
       }
     }
   }

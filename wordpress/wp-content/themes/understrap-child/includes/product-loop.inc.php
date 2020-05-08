@@ -81,7 +81,7 @@ $requirements = $requirement_template;
 
 		foreach ( $requirements as $requirement => $key ) {
 			if ( $key->slug === "_price" ) {
-				$max_price = $key->value * 1.2;
+				$max_price = $key->value * 1.25;
 				if ( get_post_meta( $post->ID, $key->slug, true ) <= $max_price ) {
 					$matches_requirement->$requirement = $key;
 				} else {
