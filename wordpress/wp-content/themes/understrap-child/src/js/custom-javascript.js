@@ -20,4 +20,31 @@ jQuery(document).ready( function() {
         console.log( response );
       });
    });
+
+   jQuery('.product-image').click(function (e) {
+      gtag('event', 'image', {
+         'event_category': 'result',
+         'value': 1
+      });
+   });
+
+   jQuery('.track-click.btn').click(function (e) {
+      gtag('event', 'button', {
+         'event_category': 'result',
+         'value': 1
+      });
+   });
+
+   jQuery('.card-title, .brand').click(function (e) {
+      gtag('event', 'title', {
+         'event_category': 'result',
+         'value': 1
+      });
+   });
+
+   jQuery('.start-over_link').click(function (e) {
+         gtag('event', 'start-over', {
+            'event_category': 'search-params',
+         });
+   });
 });
