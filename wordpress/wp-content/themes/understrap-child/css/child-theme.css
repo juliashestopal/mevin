@@ -10652,6 +10652,11 @@ figure.woocommerce-product-gallery__wrapper {
     margin: 15px 0 10px 0; }
   .card-body .card-text_desktop {
     width: 150px; }
+  .card-body a.product-title-link:hover {
+    text-decoration: none;
+    color: inherit; }
+  .card-body a.product-title-link {
+    color: inherit; }
 
 .card-info {
   background-color: #f9fafc; }

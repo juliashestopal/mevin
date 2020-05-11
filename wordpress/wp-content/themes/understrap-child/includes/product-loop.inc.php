@@ -106,14 +106,15 @@ $requirements = $requirement_template;
                             <span class="product-match-number"
                                   id='product-match-number-<?php echo $number_of_items; ?>'><?php echo $number_of_items == 1 ? "#1 Best Match" : "#{$number_of_items}"; ?></span>
                             <a target="_blank" href="<?php echo $link ?>"><img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img track-click"
-                                 alt="<?php the_title(); ?>"><a/>
+                                 alt="<?php the_title(); ?>"></a>
                         </div>
                     </div>
                     <div class="col-md-8 d-none d-sm-block block-needs">
                         <div class="card-body">
-
-                            <span class="brand"><?php echo $product->get_attribute( 'pa_brand' ); ?></span>
-							<?php the_title( '<h2 class="card-title">', '</h2>' ); ?>
+                            <a target="_blank" href="<?php echo $link ?>" class="product-title-link">
+                                <span class="brand"><?php echo $product->get_attribute( 'pa_brand' ); ?></span>
+                                <?php the_title( '<h2 class="card-title">', '</h2>' ); ?>
+                            </a>
                             <p>
                                 <i class="fa rating rating-<?php echo number_format( round( get_post_meta( $post->ID, 'rating', true ) / 5, 1 ) * 5, 1, '-', ',' ); ?>"></i>
 								<span class = "rating-number"><?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?></span>
@@ -159,11 +160,12 @@ $requirements = $requirement_template;
 
                     <div class="col-6 d-block d-sm-none">
                         <div class="card-body">
-
                             <span class="product-match-number"
                                   id='product-match-number-<?php echo $number_of_items; ?>'><?php echo $number_of_items == 1 ? "#1 Best Match" : "#{$number_of_items}"; ?></span>
-                            <span class="brand"><?php echo $product->get_attribute( 'pa_brand' ); ?></span>
-							<?php the_title( '<h2 class="card-title">', '</h2>' ); ?>
+                            <a target="_blank" href="<?php echo $link ?>" class="product-title-link">
+                                <span class="brand"><?php echo $product->get_attribute('pa_brand'); ?></span>
+                                <?php the_title('<h2 class="card-title">', '</h2>'); ?>
+                            </a>
                             <p>
                                 <i class="fa rating rating-<?php echo number_format( round( get_post_meta( $post->ID, 'rating', true ) / 5, 1 ) * 5, 1, '-', ',' ); ?>"></i>
 								<span class = "rating-number"><?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?></span>
@@ -174,8 +176,9 @@ $requirements = $requirement_template;
                     </div>
                     <div class="col-6 d-block d-sm-none">
                         <div class="product-image">
-                            <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
-                                 alt="<?php the_title(); ?>">
+                            <a target="_blank" href="<?php echo $link ?>">
+                                <img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img" alt="<?php the_title(); ?>">
+                            </a>
                         </div>
                     </div>
                     <div class="col-12 d-block d-sm-none block-btn_mobile">

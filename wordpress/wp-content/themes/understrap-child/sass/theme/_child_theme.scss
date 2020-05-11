@@ -165,6 +165,13 @@
     .card-text_desktop {
         width: 150px;
     }
+    a.product-title-link:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+    a.product-title-link{
+        color: inherit;
+    }
 }
 
 .card-info {
