@@ -105,7 +105,7 @@ $requirements = $requirement_template;
                         <div class="product-image">
                             <span class="product-match-number"
                                   id='product-match-number-<?php echo $number_of_items; ?>'><?php echo $number_of_items == 1 ? "#1 Best Match" : "#{$number_of_items}"; ?></span>
-                            <a target="_blank" class="track-click" href="<?php echo $link ?>"><img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img"
+                            <a target="_blank" href="<?php echo $link ?>"><img src="<?php echo get_the_post_thumbnail_url( $post->ID ); ?>" class="card-img track-click"
                                  alt="<?php the_title(); ?>"><a/>
                         </div>
                     </div>

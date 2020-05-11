@@ -17,7 +17,7 @@ $args = array(
     'post_type' => 'product',
     'product_cat' => $_GET['product_cat'],
     'post_status' => 'publish',
-    'posts_per_page' => 100,
+    'posts_per_page' => 10,
     'meta_query' => array(
         array( //hide out of stock (price<1)
             'key' => '_price',
