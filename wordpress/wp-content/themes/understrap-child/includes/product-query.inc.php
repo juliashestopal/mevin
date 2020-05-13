@@ -17,7 +17,7 @@ $args = array(
     'post_type' => 'product',
     'product_cat' => $_GET['product_cat'],
     'post_status' => 'publish',
-    'posts_per_page' => 10,
+    'posts_per_page' => -1,
     'meta_query' => array(
         array( //hide out of stock (price<1)
             'key' => '_price',
@@ -65,9 +65,13 @@ function calculate_relevance($post, $queryArray)
     foreach ($queryArray as $key => $value) {
         if ($key !== 'any' && $key !== 'product_cat' && $key !== 'atag') { //not "any"
             if ($key == 'price') { //if price then
-                $rprice = $value;
+                $rprice = $value*1.2;
                 $pprice = get_post_meta($post->ID, '_price', true);
-                $gprice = stats_dens_normal($rprice, $rprice * .15, $pprice) / stats_dens_normal($rprice, $rprice * .15, $rprice);
+		if ($rprice >= $pprice){$raw_score++;$post->requirements_met++;}
+                //$gprice = stats_dens_normal($rprice, $rprice * .15, $pprice) / stats_dens_normal($rprice, $rprice * .15, $rprice);
+		if (current_user_can('administrator')) {
+                //echo $key .': '.$gprice .'<br>';
+}
                 //$raw_score = $raw_score + (1 / $price);
             } else { // if not price
                 $operator = $strings_json->strings->requirements->$key->match_if ?: '>=';
@@ -83,10 +87,10 @@ function calculate_relevance($post, $queryArray)
     }
     //echo $post->post_title .': '.($raw_score) / $condition_count .'<br>';
     if (isset($gprice)) {
-        $raw_score = $raw_score * $gprice;
+        //$raw_score = $raw_score * $gprice;
     } //rank price
     if (isset($gprice) && ($gprice >= 0.8 && $gprice <= 1.2)) {
-        $post->requirements_met++;
+       // $post->requirements_met++;
     } //rank price
     //echo $post-> post_title.':'.$gprice.', ';
     //$raw_score = $raw_score / $rating_boost;$condition_count++; //rank price

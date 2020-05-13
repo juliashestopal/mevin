@@ -32,7 +32,7 @@ if (!empty($_GET['atag'])) {
 
 					<!-- Query start -->
 					<?php
-						$product_cat = 'bluetooth-headphones';
+						//$product_cat = 'bluetooth-headphones';
 						require('includes/product-query.inc.php');
 					?>
 					<?php

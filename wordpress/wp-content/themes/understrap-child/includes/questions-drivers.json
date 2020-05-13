@@ -6,7 +6,7 @@
       "0": {
         "title": "Driving screws",
         "name": "any",
-        "value": "jobs"
+        "value": "jobs"        
       },
       "1": {
         "title": "Drilling holes",
@@ -76,7 +76,8 @@
       "0": {
         "title": "Yes",
         "name": "carrying[]",
-        "value": "case=1"
+        "value": "case=1",
+        "description": "Important for preofessionals"
       },
       "1": {
         "name": "carrying[]",
