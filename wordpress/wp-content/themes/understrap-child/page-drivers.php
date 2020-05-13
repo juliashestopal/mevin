@@ -90,6 +90,9 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
                                                name="<?php echo $key->name; ?>" value="<?php echo $key->value; ?>"
                                                class="custom-control-input">
                                         <label class="custom-control-label" for="<?php echo $id; ?>">
+                                           <?php if($key->icon){ ?>
+                                                <i class="icon <?php echo $key->icon; ?>"></i>
+                                            <?php } ?>
                                             <span class="label-wrap">
                                         <span class="text-head"><?php echo $key->title; ?> </span>
                                         <span class="text-desc"><?php echo $key->description; ?> </span>

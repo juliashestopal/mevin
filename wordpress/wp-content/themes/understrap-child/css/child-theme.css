@@ -10539,6 +10539,12 @@ figure.woocommerce-product-gallery__wrapper {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-screws:before {
+  content: "\e903"; }
+
+.icon-drill:before {
+  content: "\e904"; }
+
 .icon-in-ear:before {
   content: "\e900"; }
 

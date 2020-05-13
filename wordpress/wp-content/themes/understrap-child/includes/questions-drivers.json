@@ -5,11 +5,13 @@
     "answers": {
       "0": {
         "title": "Driving screws",
+        "icon": "icon-screws",
         "name": "any",
         "value": "jobs"        
       },
       "1": {
         "title": "Drilling holes",
+        "icon": "icon-drill",
         "name": "voltage",
         "value": 12
       }
