@@ -45,7 +45,6 @@ get_header();
     <div class="questionnaire <?php echo esc_attr($container); ?>" id="content" tabindex="-1">
         <header>
             <?php while (have_posts()) : the_post(); ?>
-                <?php the_title('<h1>', '</h1>'); ?>
                 <?php the_content(); ?>
             <?php endwhile; // end of the loop. ?>
         </header>

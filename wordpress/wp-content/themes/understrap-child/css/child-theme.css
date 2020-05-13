@@ -10889,4 +10889,7 @@ span.rating-number {
   .btn-quest {
     width: 100%; } }
 
+.hidden-result-item {
+  display: none; }
+
 /*# sourceMappingURL=child-theme.css.map */

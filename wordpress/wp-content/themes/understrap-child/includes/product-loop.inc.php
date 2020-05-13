@@ -11,6 +11,7 @@ foreach ( $requirement_template as $key => $value ) {
 	}
 }
 $requirements = $requirement_template;
+$max_items_per_screen = 20;
 ?>
 
 <div class="requirement-block">
@@ -98,7 +99,7 @@ $requirements = $requirement_template;
 
 		} ?>
 
-        <div class="card mb-5">
+        <div class="card mb-5<?php if($number_of_items > $max_items_per_screen) echo ' hidden-result-item'; ?>" id="result_item_<?php echo $number_of_items; ?>">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 d-none d-sm-block block-product_img">
