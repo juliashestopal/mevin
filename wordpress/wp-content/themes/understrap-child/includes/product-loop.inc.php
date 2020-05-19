@@ -11,7 +11,6 @@ foreach ( $requirement_template as $key => $value ) {
 	}
 }
 $requirements = $requirement_template;
-$max_items_per_screen = 20;
 ?>
 
 <div class="requirement-block">

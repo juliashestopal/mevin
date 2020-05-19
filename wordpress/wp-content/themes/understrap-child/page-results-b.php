@@ -1,4 +1,4 @@
-<?php /* Template Name: Global results page */ ?>
+<?php /* Template Name: Global results page - 20 */ ?>
 <?php
 /**
  * The template for displaying archive pages.
@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
-$max_items_per_screen = 10;
+$max_items_per_screen = 20;
 
 
 if (!empty($_GET['atag'])) {

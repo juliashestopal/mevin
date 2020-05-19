@@ -31,6 +31,7 @@ global $product_cat;
     </script>
 
     <?php wp_head(); ?>
+    <script src="https://www.googleoptimize.com/optimize.js?id=GTM-NL2SNP2"></script>
 </head>
 
 <body <?php body_class(); ?>>
