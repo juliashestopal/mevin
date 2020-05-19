@@ -24,21 +24,21 @@ jQuery(document).ready( function() {
    jQuery('.product-image').click(function (e) {
       gtag('event', 'image', {
          'event_category': 'result',
-         'value': 1
+         'value': 0.18
       });
    });
 
    jQuery('.track-click.btn').click(function (e) {
       gtag('event', 'button', {
          'event_category': 'result',
-         'value': 1
+         'value': 0.18
       });
    });
 
    jQuery('.card-title, .brand').click(function (e) {
       gtag('event', 'title', {
          'event_category': 'result',
-         'value': 1
+         'value': 0.18
       });
    });
 
