@@ -1,0 +1,132 @@
+{
+  "0": {
+    "question": "Would you cast or mirror your device?",
+    "type": "checkbox",
+    "answers": {
+      "0": {
+        "title": "Apple devices",
+        "name": "AirPlay",
+        "value": "1"
+      },
+      "1": {
+        "title": "Android devices",
+        "name": "Cast",
+        "value": "1"
+      },
+      "2": {
+        "title": "PC",
+        "name": "Miracast",
+        "value": "1"
+      },
+      "3": {
+        "title": "Don't care"
+      }
+    }
+  },
+  "1": {
+    "question": "How would you like to control your streamer?",
+    "type": "checkbox",
+    "answers": {
+      "0": {
+        "title": "Remote control",
+        "name": "remote_control",
+        "value": "1"
+      },
+      "1": {
+        "title": "Voice control",
+        "name": "voice_recognition_score",
+        "value": "0"
+      },
+      "2": {
+        "title": "Phone or casting device"
+      },
+      "3": {
+        "title": "Don't care"
+      }
+    }
+  },
+  "2": {
+    "question": "Is Ultra-HD 4K support important to you?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "4k",
+        "value": "1",
+        "description": "Highly recommended if you have a 4K TV"
+      },
+      "1": {
+        "title": "Don't care"
+      }
+    }
+  },
+  "3": {
+    "question": "Is headphones support important to you?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "private_listening",
+        "value": "1"
+      },
+      "1": {
+        "title": "Don't care"
+      }
+    }
+  },
+  "4": {
+    "question": "Do you prefer an Android TV device?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "android_tv",
+        "value": "1",
+        "description": "Android TV devices support many android apps and games"
+      },
+      "1": {
+        "title": "Don't care"
+      }
+    }
+  },
+  "5": {
+    "question": "Will you want to carry it around often?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "portable",
+        "value": "1"
+      },
+      "1": {
+        "title": "Don't care"
+      }
+    }
+  },
+  "6": {
+    "question": "What’s your budget?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Up to $50",
+        "name": "price",
+        "value": 50
+      },
+      "1": {
+        "title": "$50 - $100",
+        "name": "price",
+        "value": 100
+      },
+      "2": {
+        "title": "$100 - $150",
+        "name": "price",
+        "value": 150
+      },
+      "3": {
+        "title": "$200 or more",
+        "name": "price",
+        "value": 200
+      }
+    }
+  }
+}
