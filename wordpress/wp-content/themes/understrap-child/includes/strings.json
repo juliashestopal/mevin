@@ -172,5 +172,101 @@
                 }
             }
         }
+    },
+    "streamers": {
+        "strings": {
+            "requirements": {
+                "airplay": {
+                    "title": "AirPlay",
+                    "name": "AirPlay",
+                    "slug": "AirPlay",
+                    "description": "AirPlay for casting from Apple devices",
+                    "color": "#c5a0f7",
+                    "match_text": "AirPlay",
+                    "not_match_text": "No AirPlay support"
+                },
+                "cast": {
+                    "title": "Cast",
+                    "name": "cast",
+                    "slug": "cast",
+                    "description": "Google Cast for casting from Android devices",
+                    "color": "#f1bf94",
+                    "match_text": "Google Cast",
+                    "not_match_text": "No Google Cast support"
+                },
+                "miracast": {
+                    "title": "miracast",
+                    "name": "miracast",
+                    "slug": "miracast",
+                    "description": "Miracast for casting from PCs and other devices",
+                    "color": "#8ad8bf",
+                    "match_text": "Miracast",
+                    "not_match_text": "LNo Miracast support"
+                },
+                "remote_control": {
+                    "title": "remote_control",
+                    "name": "remote_control",
+                    "slug": "remote_control",
+                    "description": "Remote control",
+                    "color": "#f1bf94",
+                    "match_text": "Remote control",
+                    "not_match_text": "No remote control"
+                },
+                "voice_recognition_score": {
+                    "title": "voice_recognition_score",
+                    "name": "voice_recognition_score",
+                    "slug": "voice_recognition_score",
+                    "description": "Voice control",
+                    "color": "#90c9f4",
+                    "match_text": "Voice control",
+                    "not_match_text": "no Voice control"
+                },
+                "4k": {
+                    "title": "4k",
+                    "name": "4k",
+                    "slug": "4k",
+                    "description": "Ultra-HD 4K video support",
+                    "color": "#90c9f4",
+                    "match_text": "Ultra-HD 4K & HDR",
+                    "not_match_text": "Standard high-definition (Not 4K)"
+                },
+                "private_listening": {
+                    "title": "private_listening ",
+                    "name": "private_listening ",
+                    "slug": "private_listening ",
+                    "description": "Private listening with headphones",
+                    "color": "#f1bf94",
+                    "match_text": "Private listening",
+                    "not_match_text": "No private listening support"
+                },
+                "android_tv": {
+                    "title": "android_tv  ",
+                    "name": "android_tv  ",
+                    "slug": "android_tv  ",
+                    "description": "Android TV operating system",
+                    "color": "#8ad8bf",
+                    "match_text": "Android TV",
+                    "not_match_text": "Not Android TV"
+                },
+                "portable": {
+                    "title": "portable",
+                    "name": "portable",
+                    "slug": "portable",
+                    "description": "Portable for carrying around",
+                    "color": "#f1bf94",
+                    "match_text": "Portable",
+                    "not_match_text": "Not portable"
+                },
+                "price": {
+                    "title": "Price",
+                    "name": "Price",
+                    "slug": "_price",
+                    "description": "$%s% budget",
+                    "color": "#9ac5d5",
+                    "match_text": "In your budget",
+                    "not_match_text": "Not in your budget"
+                }
+            }
+        }
     }
 }
