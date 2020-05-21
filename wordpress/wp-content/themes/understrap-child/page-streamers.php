@@ -71,7 +71,7 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
                 <!-- Questionnaire start -->
                 <section class="questionnaire">
                     <form method="get" id="advanced-searchform" role="search" action="results/">
-                        <input type="hidden" name="product_cat" value="impact-drivers">
+                        <input type="hidden" name="product_cat" value="streamers">
                         <input type="hidden" name="atag" value="<?php echo $atag; ?>">
 
                         <?php
