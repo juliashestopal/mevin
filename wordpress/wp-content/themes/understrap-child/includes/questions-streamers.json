@@ -1,21 +1,27 @@
 {
   "0": {
-    "question": "Would you cast or mirror your device?",
+    "question": "How would you like to cast or mirror your device?",
     "type": "checkbox",
     "answers": {
       "0": {
-        "title": "Apple devices",
+        "title": "AirPlay",
+        "description": "Native on iPhones, iPads and Macs for screen mirroring and casting",
         "name": "airplay",
+        "icon": "icon-airplay",
         "value": "1"
       },
       "1": {
-        "title": "Android devices",
+        "title": "Google Cast",
+        "description": "Supported by most major apps on all devices (Netflix, Chrome, YouTube, Hulu, HBO, etc.)",
         "name": "cast",
+        "icon": "icon-google-cast-logo",
         "value": "1"
       },
       "2": {
-        "title": "PC",
+        "title": "Miracast",
+        "description": "Screen mirroring on Windows and other devices with the Miracast app",
         "name": "miracast",
+        "icon": "icon-miracast",
         "value": "1"
       },
       "3": {

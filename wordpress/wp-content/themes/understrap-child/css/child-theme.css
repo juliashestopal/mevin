@@ -10554,6 +10554,18 @@ figure.woocommerce-product-gallery__wrapper {
 .icon-over-ear:before {
   content: "\e902"; }
 
+.icon-airplay:before {
+  content: "\e905";
+  color: #abacaf; }
+
+.icon-google-cast-logo:before {
+  content: "\e906";
+  color: #abacaf; }
+
+.icon-miracast:before {
+  content: "\e907";
+  color: #abacaf; }
+
 .wrapper {
   padding-top: 0; }
 
