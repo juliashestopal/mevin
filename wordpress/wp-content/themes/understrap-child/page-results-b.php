@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
-$max_items_per_screen = 20;
+$max_items_per_screen = 6;
 
 
 if (!empty($_GET['atag'])) {

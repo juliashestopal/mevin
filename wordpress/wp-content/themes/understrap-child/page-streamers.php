@@ -16,7 +16,7 @@ defined('ABSPATH') || exit;
 
 
 $container = get_theme_mod('understrap_container_type');
-$product_cat = 'streamers';
+$product_cat = 'streamer-boxes';
 $atag = $_GET['amz_tag'] ?: $_COOKIE['atag'];
 $was_cookie_set = false;
 $keywords_library = get_option('url_params_headphones');
@@ -71,7 +71,7 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
                 <!-- Questionnaire start -->
                 <section class="questionnaire">
                     <form method="get" id="advanced-searchform" role="search" action="results/">
-                        <input type="hidden" name="product_cat" value="streamers">
+                        <input type="hidden" name="product_cat" value="streamer-boxes">
                         <input type="hidden" name="atag" value="<?php echo $atag; ?>">
 
                         <?php
