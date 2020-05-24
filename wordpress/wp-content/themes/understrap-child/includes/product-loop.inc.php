@@ -64,9 +64,11 @@ $requirements = $requirement_template;
 	while ( $posts->have_posts() ) : $posts->the_post();
 
 		//increment view count
-		$views_count = (int) get_post_meta( $post->ID, 'views', true );
-  		update_post_meta($post->ID, 'views', ($views_count+1) );
-	
+        if($number_of_items < $max_items_per_screen){
+            $views_count = (int) get_post_meta( $post->ID, 'views', true );
+            update_post_meta($post->ID, 'views', ($views_count+1) );
+        }
+
 		$number_of_items ++;
 		$product = wc_get_product( $post->ID );
 		$count   = (int) get_post_meta( $post->ID, 'clicks', true );
