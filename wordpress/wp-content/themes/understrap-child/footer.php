@@ -29,7 +29,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<small class="text-muted">
 						Ask Mevin is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.<br />
 © askmevin.com
-						</small>
+						</small><br/>
+						<small>Get advice for <a href="https://advice.askmevin.com/wireless-headphones/">Wireless headphones</a>, <a href="https://advice.askmevin.com/impact-drivers/">Impact drivers</a>, <a href="https://advice.askmevin.com/streamer-boxes/">Streamer boxes</a></small>
 						<?php //understrap_site_info(); ?>
 
 					</div><!-- .site-info -->
