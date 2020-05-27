@@ -73,7 +73,7 @@ global $product_cat;
                     <div class="col-md top-background_img" style="background-image: url('<?php echo get_stylesheet_directory_uri() . '/images/impact-driver-cover.jpg'; ?>');">
                         <a  id="navbar-brand" class="navbar-brand" rel="home" href="<?php echo esc_url(home_url($product_cat . '/')); ?>"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" itemprop="url">
-                            <img id="logo" class="logo" src="<?php echo esc_url(home_url('/')); ?>wp-content/uploads/askmevin-logo.svg"
+                            <img id="logo" class="logo" src="<?php echo get_stylesheet_directory_uri() . '/images/askmevin-logo.svg'; ?>"
                                  alt="<?php bloginfo('name') . '-' . bloginfo('description'); ?>"><br/>
                         </a>
                     </div>
