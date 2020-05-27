@@ -43,13 +43,6 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
 
 ?>
 
-        <div class="container top-background">
-            <div class="row">
-                <div class="col-md top-background_img" style="background-image: url('<?php echo get_stylesheet_directory_uri() . '/images/impact-driver-cover.jpg'; ?>');">
-                </div>
-            </div>
-        </div> 
-
 <script src="<?php echo get_stylesheet_directory_uri() . '/js/ParentCheckBox.plugin.js' ?>"></script>
 <div class="wrapper" id="page-wrapper">
 
