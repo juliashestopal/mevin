@@ -49,15 +49,21 @@ global $product_cat;
 			<div class="container">
 		<?php endif; ?>
                     <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( $product_cat .'/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
-						<img class="logo" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/askmevin.png" alt="<?php bloginfo( 'name' ).'-'.bloginfo( 'description' ); ?>"><br />
+						<?php if($product_cat != 'impact-drivers'){ ?>
+                        <img class="logo" src="<?php echo esc_url( home_url( '/' ) ); ?>wp-content/uploads/askmevin.png" alt="<?php bloginfo( 'name' ).'-'.bloginfo( 'description' ); ?>"><br />
 						<?php if($post->post_title != 'Results'): ?>
                             <span class="description"><?php bloginfo( 'description' ); ?></span>
                         <?php endif; ?>
-					</a>
+                       <?php } else{ ?>
+                        <!--HERE-->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+
+
+
+
+
+                       <?php } ?>
+					</a>
 
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
