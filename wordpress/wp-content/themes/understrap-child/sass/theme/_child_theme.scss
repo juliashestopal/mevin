@@ -64,6 +64,7 @@
 
 .navbar-brand {
     padding-left: 20px;
+    width: 150px;
     .logo {
         max-width: 150px;
         padding: 17px; //new
@@ -300,7 +301,7 @@ span.rating-number {
 .top-container {
     display: flex;
     flex-direction: column;
-    margin: 100px auto 66px;
+    margin: 55px auto 66px;
     //padding: 22px 25px 15px;
     padding: 20px; //new
     background: #fff;
@@ -349,6 +350,11 @@ span.rating-number {
         background-color: #e2f5ef;
         color: #0bae7a;
     }
+}
+
+#top-container {
+    margin: 200px auto 66px;
+    ;
 }
 
 .questionnaire {
@@ -453,13 +459,13 @@ span.rating-number {
 
 .top-background {
     position: absolute;
-    top: 25%;
+    top: 22%;
     z-index: -10;
     margin: 0 auto;
     left: 50%;
     transform: translate(-50%, -50%);
     .top-background_img {
-        height: 350px;
+        height: 300px;
         background-size: 100%;
     }
 }
@@ -471,8 +477,8 @@ span.rating-number {
             max-height: 220px;
         }
     }
-    .top-container {
+    #top-container {
         padding: 15px;
-        margin: 15px 15px 0;
+        margin: 155px 15px 0;
     }
 }

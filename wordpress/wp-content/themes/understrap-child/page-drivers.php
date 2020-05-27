@@ -47,15 +47,9 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
 <div class="wrapper" id="page-wrapper">
 
     <div class="questionnaire <?php echo esc_attr($container); ?>" id="content" tabindex="-1">
-        <header>
-            <?php while (have_posts()) : the_post(); ?>
-
-                <?php the_content(); ?>
-            <?php endwhile; // end of the loop. ?>
-        </header>
-
+    
             <div class="row">
-                <div class="top-container col-md-10  offset-md-1">
+                <div id="top-container" class="top-container col-md-10  offset-md-1">
                     <h4> Find the right <?php echo $keywords[0] . " " . $keywords[1]; ?></h4>
                     <span> Get detailed research on the best Impact Drivers that meet your needs based on hundreds of professional reviews. </span>
                     <div class="tags">
