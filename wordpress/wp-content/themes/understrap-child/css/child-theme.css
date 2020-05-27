@@ -10572,7 +10572,8 @@ figure.woocommerce-product-gallery__wrapper {
 .navbar-brand {
   padding-left: 20px; }
   .navbar-brand .logo {
-    max-width: 150px; }
+    max-width: 150px;
+    padding: 17px; }
   .navbar-brand .description {
     color: #188de9 !important;
     font-size: 1rem;
@@ -10773,46 +10774,42 @@ span.rating-number {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 15px auto 66px;
-  padding: 22px 25px 15px;
+  margin: 100px auto 66px;
+  padding: 20px;
   background: #fff;
-  border-radius: 4px 15px 15px;
-  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 3px 10px 0 rgba(0, 0, 0, 0.04);
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 3px 10px 0 rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04);
+  border-radius: 3px 9px 9px 9px;
   font-size: 17px;
   text-align: left; }
-
-.top-container h4 {
-  font-size: 18px; }
-
-.tags {
-  margin-top: 12px;
-  margin-bottom: 9px; }
-
-.tags span {
-  display: inline-block;
-  padding: 5px 14px;
-  margin-right: 7px;
-  margin-bottom: 7px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 400; }
-
-.tags .tag-1 {
-  background-color: #f1e9fd;
-  color: #8b45ea; }
-
-.tags .tag-2 {
-  background-color: #fcefe5;
-  color: #e17b20; }
-
-.tags .tag-3 {
-  background-color: #e4f1fd;
-  color: #188ee9; }
-
-.tags .tag-4 {
-  background-color: #e2f5ef;
-  color: #0bae7a; }
+  .top-container h4 {
+    font-size: 20px;
+    font-weight: 500; }
+  .top-container span {
+    font-size: 15px;
+    font-weight: 400; }
+  .top-container .tags {
+    margin-top: 15px; }
+  .top-container .tags span {
+    display: inline-block;
+    padding: 5px 14px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400; }
+  .top-container .tags .tag-1 {
+    background-color: #f1e9fd;
+    color: #8b45ea; }
+  .top-container .tags .tag-2 {
+    background-color: #fcefe5;
+    color: #e17b20; }
+  .top-container .tags .tag-3 {
+    background-color: #e4f1fd;
+    color: #188ee9; }
+  .top-container .tags .tag-4 {
+    background-color: #e2f5ef;
+    color: #0bae7a; }
 
 .questionnaire h3 {
   margin-top: 60px;
@@ -10909,5 +10906,26 @@ span.rating-number {
 
 .hidden-result-item {
   display: none; }
+
+.top-background {
+  position: absolute;
+  top: 25%;
+  z-index: -10;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .top-background .top-background_img {
+    height: 350px;
+    background-size: 100%; }
+
+@media (max-width: 576px) {
+  .top-background {
+    top: 13%; }
+    .top-background .top-background_img {
+      max-height: 220px; }
+  .top-container {
+    padding: 15px;
+    margin: 15px 15px 0; } }
 
 /*# sourceMappingURL=child-theme.css.map */
