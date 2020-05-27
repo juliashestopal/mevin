@@ -67,6 +67,8 @@
     width: 150px;
     .logo {
         max-width: 150px;
+    }
+    #logo {
         padding: 17px; //new
     }
     .description {
@@ -301,29 +303,19 @@ span.rating-number {
 .top-container {
     display: flex;
     flex-direction: column;
-    margin: 55px auto 66px;
-    //padding: 22px 25px 15px;
-    padding: 20px; //new
+    margin: 15px auto 66px;
+    padding: 22px 25px 15px;
     background: #fff;
-    //border-radius: 4px 15px 15px;
-    //box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .08), 0 3px 10px 0 rgba(0, 0, 0, .04);
-    box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04); //new
-    border-radius: 3px 9px 9px 9px; //new
+    border-radius: 4px 15px 15px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .08), 0 3px 10px 0 rgba(0, 0, 0, .04);
     font-size: 17px;
     text-align: left;
     h4 {
-        //font-size: 18px;
-        font-size: 20px; //new
-        font-weight: 500; //new
-    }
-    span {
-        //new
-        font-size: 15px;
-        font-weight: 400;
+        font-size: 18px;
     }
     .tags {
-        margin-top: 15px;
-        //margin-bottom: 9px;
+        margin-top: 12px;
+        margin-bottom: 9px;
     }
     .tags span {
         display: inline-block;
@@ -353,8 +345,29 @@ span.rating-number {
 }
 
 #top-container {
-    margin: 200px auto 66px;
-    ;
+    // margin: 200px auto 0;
+    margin: -100px auto 0;
+    padding: 20px; //new    
+    box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04); //new
+    border-radius: 3px 9px 9px 9px; //new
+    h4 {
+        font-size: 20px; //new
+        font-weight: 500; //new
+    }
+    span {
+        //new
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .tags {
+        margin-top: 15px;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        .tag-5 {
+            background-color: transparent;
+            color: #999999;
+        }
+    }
 }
 
 .questionnaire {
@@ -458,12 +471,12 @@ span.rating-number {
 }
 
 .top-background {
-    position: absolute;
-    top: 22%;
-    z-index: -10;
-    margin: 0 auto;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: 20%;
+    // z-index: -10;
+    // margin: 0 auto;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
     .top-background_img {
         height: 300px;
         background-size: 100%;
@@ -477,8 +490,15 @@ span.rating-number {
             max-height: 220px;
         }
     }
+    #navbar-brand {
+        padding-left: 0px;
+        #logo {
+            padding: 17px 17px 17px 0; //new
+        }
+    }
     #top-container {
         padding: 15px;
-        margin: 155px 15px 0;
+        // margin: 155px 15px 0;
+        margin: -70px 15px 0;
     }
 }

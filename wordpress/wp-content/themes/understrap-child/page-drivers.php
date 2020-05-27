@@ -53,10 +53,11 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
                     <h4> Find the right <?php echo $keywords[0] . " " . $keywords[1]; ?></h4>
                     <span> Get detailed research on the best Impact Drivers that meet your needs based on hundreds of professional reviews. </span>
                     <div class="tags">
-                        <span class="tag-1">Voltage</span>
-                        <span class="tag-2">Brushless Motor</span>
-                        <span class="tag-3">Battery life</span>
-                        <span class="tag-4">Your needs</span>
+                        <span class="tag-1">Dewalt</span>
+                        <span class="tag-2">Bosch</span>
+                        <span class="tag-3">Mekita</span>
+                        <span class="tag-4">Milawukee </span>
+                        <span class="tag-5">+24 more compared</span>
                     </div>
                 </div>
             </div>
