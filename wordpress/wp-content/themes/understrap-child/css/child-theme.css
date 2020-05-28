@@ -10569,13 +10569,16 @@ figure.woocommerce-product-gallery__wrapper {
 .wrapper {
   padding-top: 0; }
 
+#navbar-brand {
+  padding-left: 5px; }
+
 .navbar-brand {
   padding-left: 20px;
   width: 150px; }
   .navbar-brand .logo {
     max-width: 150px; }
   .navbar-brand #logo {
-    padding: 17px; }
+    padding: 2px 17px 17px 2px; }
   .navbar-brand .description {
     color: #188de9 !important;
     font-size: 1rem;
@@ -10810,25 +10813,29 @@ span.rating-number {
     background-color: #e2f5ef;
     color: #0bae7a; }
 
-#top-container {
-  margin: -100px auto 0;
-  padding: 20px;
-  -webkit-box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04);
-          box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04);
-  border-radius: 3px 9px 9px 9px; }
-  #top-container h4 {
-    font-size: 20px;
-    font-weight: 500; }
-  #top-container span {
-    font-size: 15px;
-    font-weight: 400; }
-  #top-container .tags {
-    margin-top: 15px;
-    margin-bottom: 0;
-    text-transform: uppercase; }
-    #top-container .tags .tag-5 {
-      background-color: transparent;
-      color: #999999; }
+.top-container_fluid {
+  max-width: 750px; }
+  .top-container_fluid #top-container {
+    margin: -100px auto 0;
+    padding: 20px;
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 2px 0px 0px rgba(233, 235, 240, 0.004), 0px 6px 20px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 3px 9px 9px 9px; }
+    .top-container_fluid #top-container h4 {
+      font-size: 20px;
+      font-weight: 500; }
+    .top-container_fluid #top-container span {
+      font-size: 15px;
+      font-weight: 400; }
+    .top-container_fluid #top-container .tags {
+      margin-top: 15px;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+      .top-container_fluid #top-container .tags span {
+        font-size: 12px; }
+      .top-container_fluid #top-container .tags .tag-5 {
+        background-color: transparent;
+        color: #999999; }
 
 .questionnaire h3 {
   margin-top: 60px;
@@ -10926,9 +10933,14 @@ span.rating-number {
 .hidden-result-item {
   display: none; }
 
-.top-background .top-background_img {
-  height: 300px;
-  background-size: 100%; }
+.top-background {
+  max-width: 944px; }
+  .top-background .top-background_img {
+    height: 300px;
+    background-size: 100%;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08), 0px 3px 10px 0px rgba(0, 0, 0, 0.04);
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08), 0px 3px 10px 0px rgba(0, 0, 0, 0.04); }
 
 @media (max-width: 576px) {
   .top-background {
@@ -10939,7 +10951,7 @@ span.rating-number {
     padding-left: 0px; }
     #navbar-brand #logo {
       padding: 17px 17px 17px 0; }
-  #top-container {
+  .top-container_fluid #top-container {
     padding: 15px;
     margin: -70px 15px 0; } }
 

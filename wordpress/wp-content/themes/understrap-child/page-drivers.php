@@ -46,10 +46,10 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
 <script src="<?php echo get_stylesheet_directory_uri() . '/js/ParentCheckBox.plugin.js' ?>"></script>
 <div class="wrapper" id="page-wrapper">
 
-    <div class="questionnaire <?php echo esc_attr($container); ?>" id="content" tabindex="-1">
+    <div class="top-container_fluid questionnaire <?php echo esc_attr($container); ?>" id="content" tabindex="-1">
     
             <div class="row">
-                <div id="top-container" class="top-container col-md-10  offset-md-1">
+                <div id="top-container" class="top-container col-md col-xl">
                     <h4> Find the right <?php echo $keywords[0] . " " . $keywords[1]; ?></h4>
                     <span> Get detailed research on the best Impact Drivers that meet your needs based on hundreds of professional reviews. </span>
                     <div class="tags">
@@ -61,8 +61,8 @@ $questions = (object)json_decode(file_get_contents(get_stylesheet_directory_uri(
                     </div>
                 </div>
             </div>
-        <div>
-
+        
+            <div>
             <main class="site-main" id="main">
                 <!-- Questionnaire start -->
                 <section class="questionnaire">
