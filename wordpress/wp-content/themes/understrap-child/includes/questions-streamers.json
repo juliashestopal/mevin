@@ -13,7 +13,7 @@
       "1": {
         "title": "Google Cast",
         "description": "Supported by most major apps on all devices (Netflix, Chrome, YouTube, Hulu, HBO, etc.)",
-        "name": "cast",
+        "name": "chrome_cast",
         "icon": "icon-google-cast-logo",
         "value": "1"
       },
@@ -35,7 +35,7 @@
     "answers": {
       "0": {
         "title": "Remote control",
-        "name": "remote_control",
+        "name": "remote",
         "value": "1"
       },
       "1": {

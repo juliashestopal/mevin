@@ -185,9 +185,9 @@
                     "match_text": "AirPlay",
                     "not_match_text": "No AirPlay support"
                 },
-                "cast": {
+                "chrome_cast": {
                     "title": "Chrome Cast",
-                    "name": "cast",
+                    "name": "chrome_cast",
                     "slug": "chrome_cast",
                     "description": "Google Cast for casting from Android devices",
                     "color": "#f1bf94",
@@ -203,9 +203,9 @@
                     "match_text": "Miracast",
                     "not_match_text": "LNo Miracast support"
                 },
-                "remote_control": {
+                "remote": {
                     "title": "Remote Control",
-                    "name": "remote_control",
+                    "name": "remote",
                     "slug": "remote",
                     "description": "Remote control",
                     "color": "#f1bf94",
