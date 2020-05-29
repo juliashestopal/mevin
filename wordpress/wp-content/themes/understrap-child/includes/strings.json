@@ -230,14 +230,23 @@
                     "match_text": "Ultra-HD 4K & HDR",
                     "not_match_text": "Standard high-definition (Not 4K)"
                 },
-                "private_listening": {
-                    "title": "Wired Private Listening ",
-                    "name": "private_listening ",
+                "wired_private_listening": {
+                    "title": "Wired headphones support",
+                    "name": "wired_private_listening ",
                     "slug": "wired_private_listening ",
-                    "description": "Private listening with headphones",
+                    "description": "Private listening with wired headphones",
                     "color": "#f1bf94",
-                    "match_text": "Private listening",
-                    "not_match_text": "No private listening support"
+                    "match_text": "Wired headphones support",
+                    "not_match_text": "No wired headphones support"
+                },
+                "bluetooth_private_listening": {
+                    "title": "Bluetooth headphones support",
+                    "name": "bluetooth_private_listening ",
+                    "slug": "bluetooth_private_listening",
+                    "description": "Private listening with bluetooth headphones",
+                    "color": "#f1bf94",
+                    "match_text": "Bluetooth headphones support",
+                    "not_match_text": "No Bluetooth headphones support"
                 },
                 "android_tv": {
                     "title": "Android TV  ",
