@@ -69,14 +69,19 @@
   },
   "3": {
     "question": "Is headphones support important to you?",
-    "type": "radio",
+    "type": "checkbox",
     "answers": {
       "0": {
-        "title": "Yes",
-        "name": "private_listening",
+        "title": "Bluetooth headphones",
+        "name": "bluetooth_private_listening",
         "value": "1"
       },
       "1": {
+        "title": "Wired headphones",
+        "name": "wired_private_listening",
+        "value": "1"
+      },
+      "2": {
         "name": "private_listening",
         "title": "Don't care"
       }
