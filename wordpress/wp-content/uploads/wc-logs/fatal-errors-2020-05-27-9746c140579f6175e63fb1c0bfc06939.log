@@ -1,0 +1,8 @@
+2020-05-27T17:50:01+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\MAMP\htdocs\Melvin\mevin\wordpress\wp-content\themes\understrap-child\header.php on line 59
+
+2020-05-27T17:51:14+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\MAMP\htdocs\Melvin\mevin\wordpress\wp-content\themes\understrap-child\header.php on line 59
+
+2020-05-27T17:52:04+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in C:\MAMP\htdocs\Melvin\mevin\wordpress\wp-content\themes\understrap-child\header.php on line 49
+
+2020-05-27T17:52:35+00:00 CRITICAL syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in C:\MAMP\htdocs\Melvin\mevin\wordpress\wp-content\themes\understrap-child\header.php on line 49
+

@@ -5,7 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10770,6 +10770,30 @@ span.rating-number {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 3px; }
+
+.promo {
+  padding: 15px 0;
+  margin-top: -18px;
+  margin-bottom: 30px;
+  background: #ed9926; }
+  .promo img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+  .promo .promotion-description {
+    padding-right: 0;
+    padding-left: 0; }
+    .promo .promotion-description span {
+      display: block;
+      color: #fff;
+      font-size: 14px; }
+    .promo .promotion-description span:first-child {
+      font-size: 12px;
+      font-weight: 300;
+      color: #f6e0c4; }
 
 .top-container {
   display: -webkit-box;

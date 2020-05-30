@@ -245,13 +245,25 @@ shuffle($product_promotions);
             $promotion_url = wc_get_product($promotion)->get_product_url();
             $promotion_title = $promotion->post_title; ?>
 
-            <div class="col-12 d-block d-sm-none">
-                <div class="promotion" id="promotion-<?php echo $number_of_items; ?>">
-                    <a class="promotion link" href="<?php echo $promotion_url; ?>" target="_blank">
-                        <span>Active amazon promotion(<?php echo $today; ?>)</span>
-                        <span><?php echo $promotion_title; ?>)</span>
-                    </a>
-                </div>
+            <div class="col-12 d-block d-sm-none promo">
+                <a class="promotion link" href="<?php echo $promotion_url; ?>" target="_blank">
+                    <div class="promotion" id="promotion-<?php echo $number_of_items; ?>">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/tag.svg" alt="">
+                                </div>
+                                <div class="col-8 promotion-description">
+                                    <span>Active amazon promotion (<?php echo $today; ?>)</span>
+                                    <span><?php echo $promotion_title; ?></span>
+                                </div>
+                                <div class="col-2">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/arrow.svg" alt="">
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                 </a>
             </div>
 
         <?php }
