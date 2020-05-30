@@ -11,10 +11,22 @@ foreach ( $requirement_template as $key => $value ) {
 	}
 }
 $requirements = $requirement_template;
+
+
+$promotions_args = array(
+    'post_type' => 'product',
+    'product_cat' => $_GET['product_cat'] . '-promotions',
+    'post_status' => 'publish',
+    'posts_per_page' => -1,
+);
+$promotion_query = new WP_Query($promotions_args);
+$product_promotions = $promotion_query->posts;
+shuffle($product_promotions);
+
 ?>
 
 <div class="requirement-block">
-    
+
         <div class="row justify-content-md-center">
             <div class="col-md-8 col-xs-12">
                 <div class="requirement">
@@ -39,13 +51,13 @@ $requirements = $requirement_template;
                 </div>
             </div>
         </div>
-    
+
 </div>
 
 <div class="result-main_block">
     <div class="col-md-12 reviews-scanned">
         <div class="count">
-            <svg 
+            <svg
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  width="27px" height="27px">
@@ -142,7 +154,7 @@ $requirements = $requirement_template;
                                                                       href="<?php echo $link ?>">View Deal</a></p>
                             <small class="text-muted">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998" viewBox="0 0 42 21" style="margin-bottom: 2px; margin-right: 5px;">
- 
+
 <defs>
     <style>
       .cls-1 {
@@ -225,7 +237,25 @@ $requirements = $requirement_template;
                 </div>
             </div>
         </div>
-	<?php endwhile;
-	wp_reset_postdata();
-	?>
+
+        <?php if (isset($product_promotions) && !empty($product_promotions) && sizeof($product_promotions) >= 2 && ($number_of_items === 3 || $number_of_items === $max_items_per_screen)) {
+
+            ($number_of_items === 3) ? $promotion = $product_promotions[0] : $promotion = $product_promotions[1];
+            $today = date("F j");
+            $promotion_url = wc_get_product($promotion)->get_product_url();
+            $promotion_title = $promotion->post_title; ?>
+
+            <div class="col-12 d-block d-sm-none">
+                <div class="promotion" id="promotion-<?php echo $number_of_items; ?>">
+                    <a class="promotion link" href="<?php echo $promotion_url; ?>" target="_blank">
+                        <span>Active amazon promotion(<?php echo $today; ?>)</span>
+                        <span><?php echo $promotion_title; ?>)</span>
+                    </a>
+                </div>
+            </div>
+
+        <?php }
+    endwhile;
+    wp_reset_postdata();
+    ?>
 </div>
