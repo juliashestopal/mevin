@@ -306,27 +306,36 @@ span.rating-number {
     margin-top: -18px;
     margin-bottom: 30px;
     background: #ed9926;
-    img {
-        position: absolute;
-        margin: auto;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
+
+    .promotion_link {
+        img {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .promotion-description {
+            padding-right: 0;
+            padding-left: 0;
+
+            span {
+                display: block;
+                color: #fff;
+                font-size: 14px;
+            }
+
+            span:first-child {
+                font-size: 12px;
+                font-weight: 300;
+                color: #f6e0c4;
+            }
+        }
     }
-    .promotion-description {
-        padding-right: 0;
-        padding-left: 0;
-        span {
-            display: block;
-            color: #fff;
-            font-size: 14px;
-        }
-        span:first-child {
-            font-size: 12px;
-            font-weight: 300;
-            color: #f6e0c4;
-        }
+    .promotion_link:hover{
+        text-decoration: none;
     }
 }
 
