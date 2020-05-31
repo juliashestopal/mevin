@@ -246,7 +246,7 @@ shuffle($product_promotions);
             $promotion_title = $promotion->post_title; ?>
 
             <div class="col-12 d-block d-sm-none promo">
-                <a class="promotion link" href="<?php echo $promotion_url; ?>" target="_blank">
+                <a class="promotion_link" href="<?php echo $promotion_url; ?>" target="_blank">
                     <div class="promotion" id="promotion-<?php echo $number_of_items; ?>">
                         <div class="container">
                             <div class="row">

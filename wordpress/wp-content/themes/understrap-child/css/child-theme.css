@@ -10776,24 +10776,26 @@ span.rating-number {
   margin-top: -18px;
   margin-bottom: 30px;
   background: #ed9926; }
-  .promo img {
+  .promo .promotion_link img {
     position: absolute;
     margin: auto;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0; }
-  .promo .promotion-description {
+  .promo .promotion_link .promotion-description {
     padding-right: 0;
     padding-left: 0; }
-    .promo .promotion-description span {
+    .promo .promotion_link .promotion-description span {
       display: block;
       color: #fff;
       font-size: 14px; }
-    .promo .promotion-description span:first-child {
+    .promo .promotion_link .promotion-description span:first-child {
       font-size: 12px;
       font-weight: 300;
       color: #f6e0c4; }
+  .promo .promotion_link:hover {
+    text-decoration: none; }
 
 .top-container {
   display: -webkit-box;
