@@ -10789,9 +10789,9 @@ span.rating-number {
     .promo .promotion_link .promotion-description span {
       display: block;
       color: #fff;
-      font-size: 14px; }
+      font-size: 19px; }
     .promo .promotion_link .promotion-description span:first-child {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 300;
       color: #f6e0c4; }
   .promo .promotion_link:hover {
