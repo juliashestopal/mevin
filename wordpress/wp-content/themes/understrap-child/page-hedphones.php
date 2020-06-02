@@ -16,7 +16,7 @@ defined('ABSPATH') || exit;
 
 
 $container = get_theme_mod('understrap_container_type');
-$product_cat = 'bluetooth-headphones';
+$product_cat = 'wireless-headphones';
 $atag = $_GET['amz_tag'] ?: $_COOKIE['atag'];
 $was_cookie_set = false;
 $keywords_library = get_option('url_params_headphones');
@@ -65,7 +65,7 @@ get_header();
                 <!-- Questionnaire start -->
                 <section class="questionnaire">
                     <form method="get" id="advanced-searchform" role="search" action="results/">
-                        <input type="hidden" name="product_cat" value="bluetooth-headphones">
+                        <input type="hidden" name="product_cat" value="wireless-headphones">
                         <input type="hidden" name="atag" value="<?php echo $atag; ?>">
 
                         <h3>Do you prefer a specific type of headphones?</h3>
