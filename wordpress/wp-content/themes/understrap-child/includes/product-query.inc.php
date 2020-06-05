@@ -44,9 +44,17 @@ function getRelevantPosts($args){
   $query_posts = new WP_Query( $args );
 
 
+  $post_counter = 0;
   // calculate the relevance for each post
   foreach( $query_posts->posts as $post ) {
+      $amazon_data = get_post_meta($post->ID, '_cegg_data_Amazon')[0];
+      foreach ($amazon_data as $data=>$value){
+          if($value['stock_status'] < 1 ) {
+              unset($query_posts->posts[$post_counter]);
+          }
+      }
     $post->relevance = calculate_relevance( $post, $requirements );
+      $post_counter++;
   }
 
   // sorting the posts

@@ -74,6 +74,9 @@ shuffle($product_promotions);
 
 	$number_of_items = 0;
 	while ( $posts->have_posts() ) : $posts->the_post();
+        if(!isset($post)){
+            continue;
+        }
 
 		//increment view count
         if($number_of_items < $max_items_per_screen){
