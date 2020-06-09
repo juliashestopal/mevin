@@ -49,7 +49,7 @@ global $product_cat;
            href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
 
 
-        <?php if ($product_cat != 'impact-drivers' || $post->post_title === 'Results') { ?>
+        <?php if (!in_array($product_cat, array('impact-drivers','smart-tvs'))  || $post->post_title === 'Results') { ?>
             <?php if ('container' == $container) : ?>
                 <nav class="navbar navbar-expand-md navbar-dark">
                 <div class="container">
@@ -70,7 +70,7 @@ global $product_cat;
             <!--HERE-->
             <div class="container-fluid top-background">
                 <div class="row">
-                    <div class="col-md col-xl top-background_img" style="background-image: url('<?php echo get_stylesheet_directory_uri() . '/images/impact-driver-cover.jpg'; ?>');">
+                    <div class="col-md col-xl top-background_img" style="background-image: url('<?php echo get_stylesheet_directory_uri() . '/images/' . $product_cat . '-cover.jpg'; ?>');">
                         <a  id="navbar-brand" class="navbar-brand" rel="home" href="<?php echo esc_url(home_url($product_cat . '/')); ?>"
                            title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" itemprop="url">
                             <img id="logo" class="logo" src="<?php echo get_stylesheet_directory_uri() . '/images/askmevin-logo.svg'; ?>"
