@@ -281,6 +281,15 @@
     "smart-tvs": {
         "strings": {
             "requirements": {
+                "size": {
+                  "title": "size",
+                  "name": "size",
+                  "slug": "size",
+                  "description": "%s%” screen",
+                  "color": "#c5a0f7",
+                  "match_text": "%p%” screen",
+                  "not_match_text": "%p%” screen"
+                },
                 "airplay": {
                     "title": "AirPlay",
                     "name": "AirPlay",
