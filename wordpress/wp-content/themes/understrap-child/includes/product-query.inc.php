@@ -18,13 +18,13 @@ $args = array(
     'product_cat' => $_GET['product_cat'],
     'post_status' => 'publish',
     'posts_per_page' => -1,
-    'meta_query' => array(
-        array( //hide out of stock (price<1)
-            'key' => '_price',
-            'value' => 0,
-            'compare' => '>',
-        )
-    )
+    //'meta_query' => array(
+    //    array( //hide out of stock (price<1)
+    //       'key' => '_stock_status',
+    //        'value' => 'instock',
+    //        'compare' => 'IN',
+    //    )
+    //)
 );
 
 $cat = (string) $_GET['product_cat'];
@@ -43,19 +43,18 @@ function getRelevantPosts($args){
   // get the posts but do NOT order them
   $query_posts = new WP_Query( $args );
 
-
   $post_counter = 0;
   // calculate the relevance for each post
-  foreach( $query_posts->posts as $post ) {
-      $amazon_data = get_post_meta($post->ID, '_cegg_data_Amazon')[0];
-      foreach ($amazon_data as $data=>$value){
-          if($value['stock_status'] < 1 ) {
-              unset($query_posts->posts[$post_counter]);
-          }
-      }
-    $post->relevance = calculate_relevance( $post, $requirements );
-      $post_counter++;
-  }
+    foreach ($query_posts->posts as $post) {
+        $amazon_data = get_post_meta($post->ID, '_cegg_data_Amazon')[0];
+        foreach ($amazon_data as $data => $value) {
+            if ($value['stock_status'] < 1) {
+                unset($query_posts->posts[$post_counter]);
+            }
+        }
+        $post->relevance = calculate_relevance($post, $requirements);
+        $post_counter++;
+    }
 
   // sorting the posts
   usort( $query_posts->posts, 'compare' );//

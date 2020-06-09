@@ -23,7 +23,7 @@ $keywords_library = get_option('url_params_headphones');
 $keywords = array();
 
 $keywords[0] = 'Smart';
-$keywords[1] = 'Tv';
+$keywords[1] = 'TV';
 
 foreach ($keywords_library as $keys) {
     if ($keys['amz_tag'] === $atag) {

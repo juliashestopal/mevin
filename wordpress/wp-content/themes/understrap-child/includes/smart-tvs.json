@@ -163,7 +163,7 @@
     }
   },
   "6": {
-    "question": "How do you want to connect your TV to the internet?",
+    "question": "Which features are important to you?",
     "type": "checkbox",
     "answers": {
       "0": {
