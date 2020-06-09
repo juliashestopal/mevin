@@ -55,7 +55,7 @@
       "1": {
         "title": "Google Cast",
         "description": "Supported by most major apps on all devices (Netflix, Chrome, YouTube, Hulu, HBO, etc.)",
-        "name": "chrome_cast",
+        "name": "google_cast",
         "icon": "icon-google-cast-logo",
         "value": "1"
       },
@@ -76,25 +76,25 @@
     "type": "checkbox",
     "answers": {
       "0": {
-        "title": "TV & Movies",
-        "name": "",
-        "value": ""
+        "title": "TV & Movies"
       },
       "1": {
         "title": "Sports",
-        "name": "ultra_hd[]"
+        "name": "usage[]",
+        "value": "hdr=1,refresh_rate=60"
       },
       "2": {
         "title": "Video Games",
-        "name": "ultra_hd[]"
+        "name": "usage[]",
+        "value": "hdr=1,refresh_rate=60"
       },
       "3": {
         "title": "PC Monitor",
-        "name": "ultra_hd[]"
+        "name": "usage[]",
+        "value": "chroma_4:4:4=1,refresh_rate=60"
       },
       "4": {
-        "title": "Music",
-        "name": "ultra_hd[]"
+        "title": "Music"
       }
     }
   },
@@ -105,17 +105,19 @@
       "0": {
         "title": "HD 1080p",
         "description": "Recommended for smaller screens (32”) or if your TV is far away",
-        "name": "bluetooth_private_listening",
-        "value": "1"
+        "name": "resolution",
+        "value": "1080"
       },
       "1": {
         "title": "Ultra-HD 4K",
         "description": "Recommended for most use cases",
-        "name": "wired_private_listening",
-        "value": "1"
+        "name": "resolution",
+        "value": "4k"
       },
       "2": {
         "title": "8k",
+        "name": "resolution",
+        "value": "8k",
         "description": "Note that there isn’t a lot of 8K content available yet"
       }
     }
@@ -126,12 +128,11 @@
     "answers": {
       "0": {
         "title": "Yes",
-        "name": "android_tv",
+        "name": "sound_quality",
         "value": "1",
         "description": "Recommended if you care about sound and don’t have a sound bar"
       },
       "1": {
-        "name": "android_tv",
         "title": "No"
       }
     }
@@ -142,23 +143,23 @@
     "answers": {
       "0": {
         "title": "1",
-        "name": "devices",
+        "name": "hdmi",
         "value": "1"
       },
       "1": {
         "title": "2",
-        "name": "devices",
-        "value": "1"
+        "name": "hdmi",
+        "value": "2"
       },
       "2": {
         "title": "3",
-        "name": "devices",
-        "value": "1"
+        "name": "hdmi",
+        "value": "3"
       },
       "3": {
         "title": "4",
-        "name": "devices",
-        "value": "1"
+        "name": "hdmi",
+        "value": "4"
       }
     }
   },
@@ -168,7 +169,7 @@
     "answers": {
       "0": {
         "title": "Install Android apps",
-        "name": "android",
+        "name": "android_tv",
         "value": "1"
       },
       "1": {
@@ -180,13 +181,13 @@
       "2": {
         "title": "OLED",
         "description": "Excellent contrast with darker blacks and brighter whites, a little more expensive",
-        "name": "devices",
+        "name": "oled",
         "value": "1"
       },
       "3": {
         "title": "Bluetooth",
         "description": "You can connect wireless headphones and other accessories",
-        "name": "devices",
+        "name": "bluetooth",
         "value": "1"
       }
     }
