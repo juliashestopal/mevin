@@ -142,6 +142,11 @@ add_action('save_post', 'update_product_percentage_values', 10, 3);
 
 function compare_by_operator($a, $operator, $b)
 {
+    if(strpos($b, '~') !== false){
+        $arr = explode("~", $b);
+        return $a >= $arr[0] && $a<= $arr[1];
+    }
+
     switch ($operator) {
         case '<':
             return $a < $b;

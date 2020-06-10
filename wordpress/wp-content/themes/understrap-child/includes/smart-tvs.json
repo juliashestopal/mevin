@@ -13,25 +13,25 @@
         "title": "40” - 43”",
         "description": "Recommended distance: 5.5-6 feet",
         "name": "size",
-        "value": "40 - 43"
+        "value": "40~43"
       },
       "2": {
         "title": "50” - 55”",
         "description": "Recommended distance: 7-8 feet",
         "name": "size",
-        "value": "50 - 55"
+        "value": "50~55"
       },
       "3": {
         "title": "60” - 65”",
         "description": "Recommended distance: 8-9 feet",
         "name": "size",
-        "value": "60 - 65"
+        "value": "60~65"
       },
       "4": {
         "title": "70” - 75”",
         "description": "Recommended distance: 9.5-10.5 feet",
         "name": "size",
-        "value": "70 - 75"
+        "value": "70~75"
       },
       "5": {
         "title": "80” and up",
