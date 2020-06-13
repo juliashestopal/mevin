@@ -88,9 +88,9 @@ function calculate_relevance($post, $queryArray)
                 }
             }
         }
-        if (get_post_meta($post->ID, 'views', true) > 0 && get_post_meta($post->ID, 'clicks', true) > 0) {
-            $raw_score = $raw_score + (int)get_post_meta($post->ID, 'clicks', true) / (int)get_post_meta($post->ID, 'views', true);
-        }
+        //if (get_post_meta($post->ID, 'views', true) > 0 && get_post_meta($post->ID, 'clicks', true) > 0) {
+        //    $raw_score = $raw_score + (int)get_post_meta($post->ID, 'clicks', true) / (int)get_post_meta($post->ID, 'views', true);
+        //}
     }
     //echo $post->post_title .': '.($raw_score) / $condition_count .'<br>';
     if (isset($gprice)) {
