@@ -4,34 +4,34 @@
     "type": "checkbox",
     "answers": {
       "0": {
-        "title": "32”",
+        "title": "32” - 40”",
         "description": "Recommended distance: 4.5 feet",
         "name": "size",
-        "value": "32"
+        "value": "32”~40"
       },
       "1": {
-        "title": "40” - 43”",
+        "title": "40” - 50”",
         "description": "Recommended distance: 5.5-6 feet",
         "name": "size",
-        "value": "40~43"
+        "value": "40~50"
       },
       "2": {
-        "title": "50” - 55”",
+        "title": "50” - 60”",
         "description": "Recommended distance: 7-8 feet",
         "name": "size",
-        "value": "50~55"
+        "value": "50~60"
       },
       "3": {
-        "title": "60” - 65”",
+        "title": "60” - 70”",
         "description": "Recommended distance: 8-9 feet",
         "name": "size",
-        "value": "60~65"
+        "value": "60~70"
       },
       "4": {
-        "title": "70” - 75”",
+        "title": "70” - 80”",
         "description": "Recommended distance: 9.5-10.5 feet",
         "name": "size",
-        "value": "70~75"
+        "value": "70~80"
       },
       "5": {
         "title": "80” and up",
@@ -133,6 +133,8 @@
         "description": "Recommended if you care about sound and don’t have a sound bar"
       },
       "1": {
+        "name": "sound_quality",
+        "value": "0",
         "title": "No"
       }
     }

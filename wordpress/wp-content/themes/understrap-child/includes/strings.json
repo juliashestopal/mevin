@@ -388,7 +388,7 @@
                     "description": "OLED",
                     "color": "#90c9f4",
                     "match_text": "OLED",
-                    "not_match_text": "no OLED"
+                    "not_match_text": "No OLED"
                 },
                 "bluetooth": {
                     "title": "bluetooth",
@@ -397,7 +397,7 @@
                     "description": "Bluetooth",
                     "color": "#c5a0f7",
                     "match_text": "Bluetooth",
-                    "not_match_text": "no Bluetooth"
+                    "not_match_text": "No Bluetooth"
                 },
                 "price": {
                     "title": "Price",
