@@ -10674,6 +10674,10 @@ figure.woocommerce-product-gallery__wrapper {
     margin-bottom: 0; }
   .card-body .card-text {
     margin: 15px 0 10px 0; }
+  .card-body .amazon_product_title {
+    text-align: left;
+    font-size: 14px;
+    color: #6c757d !important; }
   .card-body .card-text_desktop {
     width: 150px; }
   .card-body a.product-title-link:hover {
@@ -10714,6 +10718,10 @@ span.rating-number {
   .block-btn_mobile .card-text {
     margin-top: 10px;
     margin-bottom: 10px; }
+  .block-btn_mobile .amazon_product_title {
+    text-align: left;
+    font-size: 14px;
+    color: #6c757d !important; }
 
 .block-product_img {
   border-right: 1px solid #e9ebf0; }

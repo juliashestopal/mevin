@@ -14,6 +14,7 @@ get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
 $max_items_per_screen = 10;
+$display_amazon_data = false;
 
 
 if (!empty($_GET['atag'])) {

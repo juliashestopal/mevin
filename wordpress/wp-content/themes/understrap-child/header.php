@@ -49,7 +49,7 @@ global $product_cat;
            href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
 
 
-        <?php if (!in_array($product_cat, array('impact-drivers','smart-tvs'))  || $post->post_title === 'Results') { ?>
+        <?php if (!in_array($product_cat, array('impact-drivers','smart-tvs'))  || $post->post_title === 'Results' ||  $post->post_title === 'Results - b') { ?>
             <?php if ('container' == $container) : ?>
                 <nav class="navbar navbar-expand-md navbar-dark">
                 <div class="container">
@@ -58,7 +58,7 @@ global $product_cat;
                title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" itemprop="url">
                 <img class="logo" src="<?php echo esc_url(home_url('/')); ?>wp-content/uploads/askmevin.png"
                      alt="<?php bloginfo('name') . '-' . bloginfo('description'); ?>"><br/>
-                <?php if ($post->post_title != 'Results'): ?>
+                <?php if ($post->post_title != 'Results' && $post->post_title != 'Results - b'): ?>
                     <span class="description"><?php bloginfo('description'); ?></span>
                 <?php endif; ?>
             </a>
