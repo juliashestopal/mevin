@@ -151,10 +151,15 @@ shuffle($product_promotions);
 									echo "<li class = 'non_matches_match'>" . $text . "</li>";
 								} ?>
                             </ul>
-                            <p class="card-text card-text_desktop"><a target="_blank"
-                                                                      class="track-click btn btn-primary d-block d-inline-block"
-                                                                      data-post_id="<?php echo $post->ID; ?>"
-                                                                      href="<?php echo $link ?>">View Deal</a></p>
+                            <p class="card-text card-text_desktop">
+                                <?php if (!empty(get_post_meta($post->ID, '_sale_price'))) {
+                                    $discount = 100 - (int)(get_post_meta($post->ID, '_sale_price', true) * 100 / (int)get_post_meta($post->ID, '_regular_price', true));
+                                    echo "<span class='card-text_sales'> -{$discount}% </span>";
+                                } ?>
+                                <a target="_blank"
+                                   class="track-click btn btn-primary d-block d-inline-block"
+                                   data-post_id="<?php echo $post->ID; ?>"
+                                   href="<?php echo $link ?>">View Deal</a></p>
                             <?php if (!$display_amazon_data) { ?>
                                 <small class="text-muted">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="19.996" height="9.998"
@@ -206,6 +211,10 @@ shuffle($product_promotions);
                         </div>
                     </div>
                     <div class="col-12 d-block d-sm-none block-btn_mobile">
+                        <?php if(!empty(get_post_meta($post->ID, '_sale_price'))) {
+                            $discount = 100 - (int) (get_post_meta($post->ID, '_sale_price', true) * 100 / (int) get_post_meta($post->ID, '_regular_price', true));
+                            echo "<span class='card-text_sales'> -{$discount}% </span>";
+                        } ?>
                         <p class="card-text"><a target="_blank"
                                                 class="track-click btn btn-primary d-block d-inline-block"
                                                 data-post_id="<?php echo $post->ID; ?>" href="<?php echo $link ?>">View
