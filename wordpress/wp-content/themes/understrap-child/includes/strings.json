@@ -71,6 +71,7 @@
                     "slug": "latency",
                     "description": "Latency",
                     "color": "#90c9f4",
+                    "match_text": "No Latency",
                     "not_match_text": "No Latency"
                 },
                 "foldable": {
@@ -288,6 +289,7 @@
                   "description": "%s%” screen",
                   "color": "#c5a0f7",
                   "match_text": "%p%” screen",
+                  "match_if": "===",
                   "not_match_text": "%p%” screen"
                 },
                 "airplay": {
@@ -332,8 +334,8 @@
                     "slug": "refresh_rate",
                     "description": "60hz or more refresh rate",
                     "color": "#90c9f4",
-                    "match_text": "%p% refresh rate",
-                    "not_match_text": "%p% refresh rate"
+                    "match_text": "%p%Hz refresh rate",
+                    "not_match_text": "%p%Hz refresh rate"
                 },
                 "chroma 4:4:4": {
                     "title": "chroma 4:4:4",
