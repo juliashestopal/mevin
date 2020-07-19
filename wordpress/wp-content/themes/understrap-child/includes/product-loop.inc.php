@@ -152,7 +152,7 @@ shuffle($product_promotions);
 								} ?>
                             </ul>
                             <p class="card-text card-text_desktop">
-                                <?php if (!empty(get_post_meta($post->ID, '_sale_price'))) {
+                                <?php if (!empty(get_post_meta($post->ID, '_sale_price')) && $display_sales) {
                                     $discount = 100 - (int)(get_post_meta($post->ID, '_sale_price', true) * 100 / (int)get_post_meta($post->ID, '_regular_price', true));
                                     echo "<span class='card-text_sales'> -{$discount}% </span>";
                                 } ?>
@@ -211,7 +211,7 @@ shuffle($product_promotions);
                         </div>
                     </div>
                     <div class="col-12 d-block d-sm-none block-btn_mobile">
-                        <?php if(!empty(get_post_meta($post->ID, '_sale_price'))) {
+                        <?php if (!empty(get_post_meta($post->ID, '_sale_price')) && $display_sales) {
                             $discount = 100 - (int) (get_post_meta($post->ID, '_sale_price', true) * 100 / (int) get_post_meta($post->ID, '_regular_price', true));
                             echo "<span class='card-text_sales'> -{$discount}% </span>";
                         } ?>
