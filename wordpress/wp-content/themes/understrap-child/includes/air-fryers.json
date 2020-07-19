@@ -1,0 +1,151 @@
+{
+  "0": {
+    "question": "What capacity do you need?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "0.5L - 2L",
+        "description": "Single person",
+        "name": "capacity",
+        "value": "0.5~32"
+      },
+      "1": {
+        "title": "2L - 4L",
+        "description": "2-3 people",
+        "name": "capacity",
+        "value": "2~4"
+      },
+      "2": {
+        "title": "4L - 6L",
+        "description": "4-5 people",
+        "name": "capacity",
+        "value": "4~6"
+      },
+      "3": {
+        "title": "Don't care",
+        "name": "capacity",
+        "value": "0~10"
+      }
+    }
+  },
+  "1": {
+    "question": "Do you want to prepare multiple dishes at once?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "multiple",
+        "value": "1"
+      },
+      "1": {
+        "title": "No",
+        "name": "multiple",
+        "value": "0"
+      }
+    }
+  },
+  "2": {
+    "question": "Do you want to cook rotisserie recipes?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "rotisserie",
+        "description": "The rotation cooks the meat evenly and helps meats remain juicy",
+        "value": "1"
+      },
+      "1": {
+        "title": "No",
+        "name": "rotisserie",
+        "value": "0"
+      }
+    }
+  },
+  "3": {
+    "question": "Do you want a food dehydrator?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "dehydrator",
+        "description": "Extends produce shelf-life by dehydrating them",
+        "value": "1"
+      },
+      "1": {
+        "title": "No",
+        "name": "dehydrator",
+        "value": "0"
+      }
+    }
+  },
+  "4": {
+    "question": "Do you prefer a WiFi enabled smart device?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "description": "Control the device with your phone",
+        "name": "wifi",
+        "value": "1"
+      },
+      "1": {
+        "title": "No",
+        "name": "wifi",
+        "value": "0"
+      }
+    }
+  },
+  "5": {
+    "question": "Are presets for meals important for you?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "description": "Sets temperature and time for specifc foods",
+        "name": "presets",
+        "value": "1"
+      },
+      "1": {
+        "title": "No",
+        "name": "presets",
+        "value": "0"
+      }
+    }
+  },
+  "7": {
+    "question": "Do you have a budget?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "$50",
+        "name": "price",
+        "value": 50
+      },
+      "1": {
+        "title": "$100",
+        "name": "price",
+        "value": 100
+      },
+      "2": {
+        "title": "$150",
+        "name": "price",
+        "value": 150
+      },
+      "3": {
+        "title": "$1000",
+        "name": "price",
+        "value": 1000
+      },
+      "4": {
+        "title": "$200 or more",
+        "name": "price",
+        "value": 200
+      },
+      "5": {
+        "title": "Don't know",
+        "name": "price",
+        "value": 2000
+      }
+    }
+  }
+}
