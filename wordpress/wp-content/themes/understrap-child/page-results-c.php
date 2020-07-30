@@ -1,4 +1,4 @@
-<?php /* Template Name: Global results page */ ?>
+<?php /* Template Name: Global results page - C no match count */ ?>
 <?php
 /**
  * The template for displaying archive pages.
@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 $max_items_per_screen = 10;
 $display_amazon_data = false;
 $display_sales = false;
-$display_match_count = true;
+$display_mach_count = false;
 
 
 if (!empty($_GET['atag'])) {
@@ -25,8 +25,22 @@ if (!empty($_GET['atag'])) {
 ?>
 
 <div class="wrapper" id="results-wrapper">
+	
 
 	<div class="questionnaire <?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+		<div class="row">
+            <div id="top-container" class="top-container col-md col-xl">
+                <h4> Find the right <?php echo $keywords[0] . " " . $keywords[1]; ?></h4>
+                <span> Get detailed research on the best Air Fryers that meet your needs based on hundreds of reviews. </span>
+                <div class="tags">
+                    <span class="tag-1">COSORI</span>
+                    <span class="tag-2">Ninja</span>
+                    <span class="tag-3">GoWise</span>
+                    <span class="tag-4">BLACK+DECKER </span>
+                    <span class="tag-5">+28 more compared</span>
+                </div>
+            </div>
+        </div>
 
 
 			<!-- Do the left sidebar check -->

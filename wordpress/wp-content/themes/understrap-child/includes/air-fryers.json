@@ -4,24 +4,30 @@
     "type": "radio",
     "answers": {
       "0": {
-        "title": "0.5L - 2L",
+        "title": "0.5Qt - 2Qt",
         "description": "Single person",
         "name": "capacity",
         "value": "0.5~32"
       },
       "1": {
-        "title": "2L - 4L",
+        "title": "2Qt - 4Qt",
         "description": "2-3 people",
         "name": "capacity",
         "value": "2~4"
       },
       "2": {
-        "title": "4L - 6L",
+        "title": "4Qt - 6Qt",
         "description": "4-5 people",
         "name": "capacity",
         "value": "4~6"
       },
       "3": {
+        "title": "7Qt or more",
+        "description": "4-5 people",
+        "name": "capacity",
+        "value": "7"
+      },
+      "4": {
         "title": "Don't care",
         "name": "capacity",
         "value": "0~10"

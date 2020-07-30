@@ -25,6 +25,7 @@ shuffle($product_promotions);
 
 ?>
 
+<?php if ($display_match_count) { ?>
 <div class="requirement-block">
 
         <div class="row justify-content-md-center">
@@ -53,6 +54,8 @@ shuffle($product_promotions);
         </div>
 
 </div>
+
+<?php }; //match count header ?>
 
 <div class="result-main_block">
     <div class="col-md-12 reviews-scanned">
@@ -137,7 +140,8 @@ shuffle($product_promotions);
 								<span class = "rating-number"><?php echo number_format( get_post_meta( $post->ID, 'review_count', true ) ); ?></span>
                             </p>
 
-                            <p class="matches_count"> <?php echo count( (array) $matches_requirement ) . '/' . count( (array) $requirements ); ?>
+                            <?php if ($display_match_count ) { ?>
+			    <p class="matches_count"> <?php echo count( (array) $matches_requirement ) . '/' . count( (array) $requirements ); ?>
                                 Needs Matched </p>
                             <ul class="matches_list">
 								<?php foreach ( $matches_requirement as $key => $value ) {
@@ -151,6 +155,7 @@ shuffle($product_promotions);
 									echo "<li class = 'non_matches_match'>" . $text . "</li>";
 								} ?>
                             </ul>
+			    <?php }; ?>
                             <p class="card-text card-text_desktop">
                                 <?php if (!empty(get_post_meta($post->ID, '_sale_price')) && $display_sales) {
                                     $discount = 100 - (int)(get_post_meta($post->ID, '_sale_price', true) * 100 / (int)get_post_meta($post->ID, '_regular_price', true));
