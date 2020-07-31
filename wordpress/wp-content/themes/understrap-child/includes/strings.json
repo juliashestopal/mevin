@@ -412,5 +412,84 @@
                 }
             }
         }
+    },
+    "air-fryers": {
+        "strings": {
+            "requirements": {
+                "capacity": {
+                    "title": "Capacity",
+                    "name": "Capacity",
+                    "slug": "capacity",
+                    "description": "%s%Qt capacity",
+                    "color": "#c5a0f7",
+                    "match_text": "%p%Qt capacity",
+                    "match_if": "===",
+                    "not_match_text": "%p%Qt capacity"
+                },
+                "wifi": {
+                    "title": "WiFi",
+                    "name": "WiFi",
+                    "slug": "wifi",
+                    "description": "WiFi",
+                    "color": "#c5a0f7",
+                    "match_text": "WiFi enabled",
+                    "not_match_text": "No WiFi"
+                },
+                "presets": {
+                    "title": "Presets",
+                    "name": "presets",
+                    "slug": "presets",
+                    "description": "Presets support",
+                    "color": "#f1bf94",
+                    "match_text": "%s%Qt presets",
+                    "not_match_text": "No presets support"
+                },
+                "dishwasher": {
+                    "title": "Dishwasher",
+                    "name": "dishwasher",
+                    "slug": "dishwasher",
+                    "description": "Dishwasher",
+                    "color": "#8ad8bf",
+                    "match_text": "Dishwasher safe",
+                    "not_match_text": "Not dishwasher safe"
+                },
+                "stackable_trays": {
+                    "title": "Stackable trays",
+                    "name": "stackable_trays",
+                    "slug": "stackable_trays",
+                    "description": "Stackable trays for multiple dishes",
+                    "color": "#f1bf94",
+                    "match_text": "Stackable trays",
+                    "not_match_text": "Single tray"
+                },
+                "dehydrator": {
+                    "title": "Dehydrator",
+                    "name": "dehydrator",
+                    "slug": "dehydrator",
+                    "description": "Dehydrator",
+                    "color": "#90c9f4",
+                    "match_text": "Dehydrator",
+                    "not_match_text": "No dehydrator"
+                },
+                "rotisserie": {
+                    "title": "Rotisserie",
+                    "name": "rotisserie",
+                    "slug": "rotisserie",
+                    "description": "Rotisserie",
+                    "color": "#90c9f4",
+                    "match_text": "Rotisserie",
+                    "not_match_text": "No Rotisserie"
+                },
+                "price": {
+                    "title": "Price",
+                    "name": "Price",
+                    "slug": "_price",
+                    "description": "Around $%s% budget",
+                    "color": "#9ac5d5",
+                    "match_text": "In your budget",
+                    "not_match_text": "Not in your budget"
+                }
+            }
+        }
     }
 }

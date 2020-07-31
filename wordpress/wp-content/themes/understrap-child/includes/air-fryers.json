@@ -7,7 +7,7 @@
         "title": "0.5Qt - 2Qt",
         "description": "Single person",
         "name": "capacity",
-        "value": "0.5~32"
+        "value": "0~2"
       },
       "1": {
         "title": "2Qt - 4Qt",
@@ -19,18 +19,13 @@
         "title": "4Qt - 6Qt",
         "description": "4-5 people",
         "name": "capacity",
-        "value": "4~6"
+        "value": "4~7"
       },
       "3": {
         "title": "7Qt or more",
         "description": "4-5 people",
         "name": "capacity",
         "value": "7"
-      },
-      "4": {
-        "title": "Don't care",
-        "name": "capacity",
-        "value": "0~10"
       }
     }
   },
@@ -40,12 +35,12 @@
     "answers": {
       "0": {
         "title": "Yes",
-        "name": "multiple",
+        "name": "stackable_trays",
         "value": "1"
       },
       "1": {
         "title": "No",
-        "name": "multiple",
+        "name": "stackable_trays",
         "value": "0"
       }
     }
@@ -102,6 +97,22 @@
     }
   },
   "5": {
+    "question": "Do you prefer to clean the tray in a dishwasher?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Yes",
+        "name": "dishwasher",
+        "value": "1"
+      },
+      "1": {
+        "title": "No",
+        "name": "presets",
+        "value": "0"
+      }
+    }
+  },
+  "6": {
     "question": "Are presets for meals important for you?",
     "type": "radio",
     "answers": {
