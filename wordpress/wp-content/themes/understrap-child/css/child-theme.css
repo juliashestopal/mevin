@@ -10723,6 +10723,11 @@ span.rating-number {
 .brand {
   font-size: 1.5rem; }
 
+.top-promotion-head {
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 15px; }
+
 .block-btn_mobile {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   padding-bottom: 10px;
@@ -10978,6 +10983,48 @@ span.rating-number {
           box-shadow: 0 2px 12px 0 rgba(24, 142, 233, 0.2);
   border-radius: 5px;
   border: none; }
+
+.top-promotions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+  overflow: scroll; }
+  .top-promotions .home-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 45%;
+    margin: 5px; }
+    .top-promotions .home-card .card-img-placeholder {
+      height: 150px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .top-promotions .home-card .brand {
+      text-align: left;
+      padding-left: 15px;
+      font-size: 18px; }
+    .top-promotions .home-card .card-title {
+      font-size: 20px;
+      padding-left: 13px; }
+    .top-promotions .home-card .starts-placeholder {
+      text-align: center; }
+    .top-promotions .home-card a.product-title-link {
+      color: inherit; }
+
+.title-match {
+  font-size: 12px;
+  color: #8b45ea;
+  background: #f1e9fd;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 5px; }
+
+#headphones-head {
+  font-size: 21px;
+  margin-top: 25px; }
 
 @media (max-width: 576px) {
   .requirement {
