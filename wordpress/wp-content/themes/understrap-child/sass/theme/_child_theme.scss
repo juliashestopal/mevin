@@ -538,10 +538,11 @@ span.rating-number {
 .top-promotions{
     display: flex;
     margin-bottom: 50px;
+    width: 96vw;
     overflow: scroll;
     .home-card{
         display: flex;
-        min-width: 45%;
+        min-width: 44%;
         margin: 5px;
         .card-img-placeholder{
             height: 150px;
@@ -551,7 +552,7 @@ span.rating-number {
         }
         .brand{
             text-align: left;
-            padding-left: 15px;
+            padding-left: 13px;
             font-size: 18px;
         }
         .card-title{
@@ -559,12 +560,15 @@ span.rating-number {
             padding-left: 13px;
         }
         .starts-placeholder{
-            text-align: center;
+            text-align: left;
+            padding-left: 13px;
         }
         a.product-title-link{
             color: inherit;
         }
-
+        .card-title{
+            margin-bottom: .40rem;
+        }
     }
 }
 

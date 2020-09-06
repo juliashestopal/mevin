@@ -58,7 +58,16 @@ function thousandsCurrencyFormat($num) {
 
 get_header();
 ?>
-
+<style>
+    @media (max-width: 767px) {
+        .description {
+            display: none !important;
+        }
+        .navbar-brand{
+            padding-left: 2px;
+        }
+    }
+</style>
 <script src="<?php echo get_stylesheet_directory_uri() . '/js/ParentCheckBox.plugin.js' ?>"></script>
 <div class="wrapper" id="page-wrapper">
 
@@ -80,7 +89,7 @@ get_header();
             </div>
         </div>
 
-        <h4 class="top-promotion-head d-xs-block d-md-none"> The best <?php echo $keywords[0] . " " . $keywords[1]; ?></h4>
+        <h4 class="top-promotion-head d-xs-block d-md-none"> The Best <?php echo $keywords[0] . " " . $keywords[1]; ?></h4>
         <div class="top-promotions d-xs-block d-md-none">
             <?php
 
