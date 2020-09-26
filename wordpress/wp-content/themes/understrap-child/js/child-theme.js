@@ -7098,7 +7098,7 @@ jQuery(document).ready( function() {
 
    jQuery('.top-promotions .product-title-link').click(function (e) {
       gtag('event', 'home', {
-         'event_category': 'home-promotions',
+         'event_category': 'result',
       });
    });
 });

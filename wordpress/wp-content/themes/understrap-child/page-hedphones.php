@@ -110,7 +110,7 @@ get_header();
                 }
             if(get_the_post_thumbnail_url( $post->ID )): ?>
                 <div class="card home-card">
-                    <a class="product-title-link" href="<?php echo $link; ?>">
+                    <a target="_blank" class="product-title-link" href="<?php echo $link; ?>">
                         <div class="card-img-placeholder" style="background-image: url('<?php echo get_the_post_thumbnail_url( $post->ID ); ?>')">
                         </div>
                         <span class="brand"><?php echo $product->get_attribute( 'pa_brand' ); ?></span>
