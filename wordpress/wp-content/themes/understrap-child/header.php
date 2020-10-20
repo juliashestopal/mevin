@@ -49,7 +49,7 @@ global $product_cat;
            href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
 
 
-        <?php if (!in_array($product_cat, array('impact-drivers','smart-tvs', 'air-fryers'))  || $post->post_title === 'Results' ||  $post->post_title === 'Results - b') { ?>
+        <?php if (!in_array($product_cat, array('impact-drivers','smart-tvs', 'air-fryers', 'fiverr_logo'))  || $post->post_title === 'Results' ||  $post->post_title === 'Results - b') { ?>
             <?php if ('container' == $container) : ?>
                 <nav class="navbar navbar-expand-md navbar-dark">
                 <div class="container">

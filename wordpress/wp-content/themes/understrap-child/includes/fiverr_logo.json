@@ -1,0 +1,201 @@
+{
+  "0": {
+    "question": "Which Style Do You Prefer?",
+    "type": "checkbox",
+    "answers": {
+      "0": {
+        "title": "Minimalist",
+        "description": "Popular flat and modern style",
+        "name": "minimalist",
+        "value": "1"
+      },
+      "1": {
+        "title": "Mascot",
+        "description": "A character will be prominently featured",
+        "name": "mascot",
+        "value": "1"
+      },
+      "2": {
+        "title": "3D",
+        "description": "Eye popping modern design",
+        "name": "3d",
+        "value": "1"
+      },
+      "3": {
+        "title": "Signature",
+        "description": "Stylized handwritten textual design",
+        "name": "signature",
+        "value": "1"
+      },
+      "4": {
+        "title": "Vintage",
+        "description": "Ornate illustrated designs",
+        "name": "vintage",
+        "value": "1"
+      },
+      "5": {
+        "title": "Hand-Drawn",
+        "description": "A truely unique design",
+        "name": "hand-drawn",
+        "value": "1"
+      },
+      "6": {
+        "title": "Watercolor",
+        "description": "Colorful and soft designs",
+        "name": "watercolor",
+        "value": "1"
+      },
+      "7": {
+        "title": "Don't care"
+      }
+    }
+  },
+  "1": {
+    "question": "Which File Formats Do You Need?",
+    "type": "checkbox",
+    "answers": {
+      "0": {
+        "title": "Source Files",
+        "description": "Recommened: The original fully editable files",
+        "name": "source_files",
+        "value": "1"
+      },
+      "1": {
+        "title": "Vector Files",
+        "description": "Flexibel file types that allow you to enlarge your logo to any size",
+        "name": "vector_files",
+        "value": "1"
+      },
+      "2": {
+        "title": "Transperant",
+        "description": "Display your logo online without a white background behind it",
+        "name": "transperant",
+        "value": "1"
+      },
+      "3": {
+        "title": "For Print",
+        "description": "Print requires a much higher resolution than digital",
+        "name": "for_print",
+        "value": "1"
+      }
+    }
+  },
+  "2": {
+    "question": "Do You Need Additional Assets?",
+    "type": "checkbox",
+    "answers": {
+      "0": {
+        "title": "Social Media Kit",
+        "description": "Assets (e.g. Profile and cover images) for social media platforms",
+        "name": "social_media_kit",
+        "value": "1"
+      },
+      "1": {
+        "title": "Stationery Kit",
+        "description": "Business cards, stationery paper, envelopes and more...",
+        "name": "stationery_media_kit",
+        "value": "1"
+      }
+    },
+    "3": {
+      "question": "Do You Want Multiple Initial Concpets?",
+      "type": "radio",
+      "answers": {
+        "0": {
+          "title": "One",
+          "description": "If you need a quick turn around and trust the designer"
+        },
+        "1": {
+          "title": "At Least Two",
+          "description": "You'll have 2 different concepts to choose from"
+        },
+        "2": {
+          "title": "Multiple Initial Conepts",
+          "description": "A designer will create multiple options for you to choose from"
+        }
+      }
+    }
+  },
+  "4": {
+    "question": "How Many Revisions Do You Need?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "One",
+        "description": "You can ask the designer to change the design once",
+        "name": "size",
+        "value": "1"
+      },
+      "2": {
+        "title": "At Least Two",
+        "description": "If you're not sure the design will be just right from the start",
+        "name": "size",
+        "value": "2"
+      },
+      "3": {
+        "title": "Multiple Revisions",
+        "description": "A designer will work with you to make the exact logo you wanted",
+        "name": "size",
+        "value": "3"
+      }
+    }
+  },
+  "5": {
+    "question": "When Do You Need your Logo?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Tomorrow",
+        "name": "time",
+        "value": "1"
+      },
+      "1": {
+        "title": "2-3 Days",
+        "name": "time",
+        "value": "2"
+      },
+      "2": {
+        "title": "A week",
+        "name": "time",
+        "value": "3"
+      },
+      "3": {
+        "title": "Don't care",
+        "name": "time",
+        "value": "0"
+      }
+    }
+  },
+  "7": {
+    "question": "What’s your budget?",
+    "type": "radio",
+    "answers": {
+      "0": {
+        "title": "Up to $25",
+        "name": "price",
+        "value": 25
+      },
+      "1": {
+        "title": "$50",
+        "name": "price",
+        "value": 50
+      },
+      "2": {
+        "title": "$100",
+        "name": "price",
+        "value": 100
+      },
+      "3": {
+        "title": "$200",
+        "name": "price",
+        "value": 200
+      },
+      "4": {
+        "title": "$250 or more",
+        "name": "price",
+        "value": 250
+      }
+    }
+  }
+}
+
